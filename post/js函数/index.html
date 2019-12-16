@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>404 page not found - 余佩的博客</title>
+  <title>《JS 函数》 - 余佩的博客</title>
   
 
 <meta name="renderer" content="webkit" />
@@ -23,7 +23,8 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="🐟" />
-  <meta name="description" content="Hugo theme jane example site." />
+  <meta name="description" content="JS函数 本篇博客将为大家介绍 1.函数的声明方式 2.函数的闭包 3.函数的本质 4.JS函数调用时机 函数的声明方式 1.构造具名函数 function 函数名(形参1" />
+
   <meta name="keywords" content="Hugo, theme, jane" />
 
 
@@ -34,7 +35,7 @@
 <meta name="generator" content="Hugo 0.61.0" />
 
 
-<link rel="canonical" href="http://localhost:1313/404.html" />
+<link rel="canonical" href="http://localhost:1313/post/js%E5%87%BD%E6%95%B0/" />
 
 
 
@@ -58,15 +59,21 @@
 
 
 
-<meta property="og:title" content="404 Page not found" />
-<meta property="og:description" content="Hugo theme jane example site." />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="http://localhost:1313/404.html" />
+<meta property="og:title" content="《JS 函数》" />
+<meta property="og:description" content="JS函数 本篇博客将为大家介绍 1.函数的声明方式 2.函数的闭包 3.函数的本质 4.JS函数调用时机 函数的声明方式 1.构造具名函数 function 函数名(形参1" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/post/js%E5%87%BD%E6%95%B0/" />
 
-<meta itemprop="name" content="404 Page not found">
-<meta itemprop="description" content="Hugo theme jane example site."><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="404 Page not found"/>
-<meta name="twitter:description" content="Hugo theme jane example site."/>
+<meta itemprop="name" content="《JS 函数》">
+<meta itemprop="description" content="JS函数 本篇博客将为大家介绍 1.函数的声明方式 2.函数的闭包 3.函数的本质 4.JS函数调用时机 函数的声明方式 1.构造具名函数 function 函数名(形参1">
+
+<meta itemprop="wordCount" content="675">
+
+
+
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="《JS 函数》"/>
+<meta name="twitter:description" content="JS函数 本篇博客将为大家介绍 1.函数的声明方式 2.函数的闭包 3.函数的本质 4.JS函数调用时机 函数的声明方式 1.构造具名函数 function 函数名(形参1"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -325,21 +332,193 @@
     <main id="main" class="main bg-llight">
       <div class="content-wrapper">
         <div id="content" class="content container">
-          
-<div class="not-found">
-  <h1 class="error-emoji"></h1>
-  <p class="error-text">/* 404 page not found. */</p>
-  <p class="error-link"><a href="/">↑ Back Home ↑</a></p>
+          <article class="post bg-white">
+    
+    <header class="post-header">
+      <h1 class="post-title">《JS 函数》</h1>
+      
+      <div class="post-meta">
+        <time datetime="0001-01-01" class="post-time">
+          0001-01-01
+        </time>
+        
+        
+
+        
+        
+
+        
+        
+      </div>
+    </header>
+
+    
+    
+<div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#heading-1">函数的作用域</a></li>
+  </ul>
+</nav>
+  </div>
 </div>
-<script>
-  var errorEmojiContainer = document.getElementsByClassName('error-emoji')[0];
-  var emojiArray = [
-    '\\(o_o)/', '(o^^)o', '(˚Δ˚)b', '(^-^*)', '(≥o≤)', '(^_^)b', '(·_·)',
-    '(=\'X\'=)', '(>_<)', '(;-;)', '\\(^Д^)/',
-  ];
-  var errorEmoji = emojiArray[Math.floor(Math.random() * emojiArray.length)];
-  errorEmojiContainer.appendChild(document.createTextNode(errorEmoji));
-</script>
+
+    
+    <div class="post-content">
+      <h1 id="js">JS函数</h1>
+<p>本篇博客将为大家介绍</p>
+<p>1.函数的声明方式</p>
+<p>2.函数的闭包</p>
+<p>3.函数的本质</p>
+<p>4.JS函数调用时机</p>
+<h1 id="heading">函数的声明方式</h1>
+<p>1.构造具名函数</p>
+<pre><code>function 函数名(形参1,形参2){
+    语句;
+    return 返回值
+}
+</code></pre><p>2.构造匿名函数</p>
+<pre><code>let a = function(x,y){
+    语句;
+    return 返回值
+}
+</code></pre><p>3.构造箭头函数</p>
+<pre><code>let b = (x,y)=&gt;{
+    return x+y;
+}
+</code></pre><p>4.window.Function构造函数，这种方法使用比较复杂，有兴趣的朋友可以自己去了解</p>
+<p>这里我们补充一下函数的name,也就是函数名。</p>
+<p>具名函数的函数名 即是function后面所跟的名字</p>
+<p>匿名函数(箭头函数函数名 即是被赋予的变量名</p>
+<h2 id="heading-1">函数的作用域</h2>
+<p>函数的作用域可以用一句话来归纳那就是就近原则，我们用一个例子来理解</p>
+<pre><code>function f1(){
+let a = 1
+function f2(){
+let a = 2
+console.log(a)
+}
+console.log(a)
+a = 3
+f2()
+}
+f1()
+
+</code></pre><p>那么什么是闭包呢，闭包就是「函数」和「函数内部能访问到的变量」（也叫环境）的总和</p>
+<pre><code>var local = '变量'
+function foo{
+    console.log(local)
+}
+</code></pre><p>闭包就是变量local与函数foo</p>
+<p>那么闭包是用来干什么的呢？</p>
+<p>闭包常常用来「间接访问一个变量」。换句话说，「隐藏一个变量」。</p>
+<p>#函数的本质</p>
+<p>函数的本质是对象，是一段能够反复调用的代码块，我们通过传递不同的参数，返回不同的值，</p>
+<p>得到我们想要的结果，比如</p>
+<pre><code>let getArea = r=&gt;{
+    return 2*3.14*r*r
+}
+</code></pre><p>我们传入不同的参数，就可以得到不同的圆的面积</p>
+<p>#函数的作用时机</p>
+<p>例</p>
+<pre><code>let i = 0
+for(i = 0; i&lt;6; i++){
+  setTimeout(()=&gt;{
+    console.log(i)
+  },0)
+}
+</code></pre><p>这时候打印出来的结果是6个6，为什么会这样呢，因为setTimeout有等会再执行的意思，所以这里会将for循环执行完后再打印，此时i的值为6</p>
+<pre><code>for(let i=0;i&lt;6;i++){
+setTimeout(()=&gt;{
+    console.log(i)
+  },0)
+}
+</code></pre><p>当我们把i放在里面，for和let一起使用，这时每个i都会复制一次，所以每次都会打出一个复制的i，结果就是0 1 2 3 4 5</p>
+<p>其他方法打印出0-5</p>
+<pre><code>let i=(x)=&gt;{
+    if(x&lt;6){
+        return x
+    }
+}
+i(1)
+i(2)
+i(3)
+i(4)
+i(5)
+</code></pre>
+    </div>
+
+    
+    
+<div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">🐟</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+      0001-01-01
+      
+    </span>
+  </p>
+  
+  <p class="copyright-item">
+    <span class="item-title">许可协议</span>
+    <span class="item-content"><a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a></span>
+  </p>
+</div>
+
+
+    
+    
+
+    <footer class="post-footer">
+      
+
+      
+      <nav class="post-nav">
+        
+          <a class="prev" href="/post/my-first-post/">
+            
+            <i class="iconfont">
+              <svg  class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M691.908486 949.511495l75.369571-89.491197c10.963703-12.998035 10.285251-32.864502-1.499144-44.378743L479.499795 515.267417 757.434875 204.940602c11.338233-12.190647 11.035334-32.285311-0.638543-44.850487l-80.46666-86.564541c-11.680017-12.583596-30.356378-12.893658-41.662889-0.716314L257.233596 494.235404c-11.332093 12.183484-11.041474 32.266891 0.657986 44.844348l80.46666 86.564541c1.772366 1.910513 3.706415 3.533476 5.750981 4.877077l306.620399 321.703933C662.505829 963.726242 680.945807 962.528973 691.908486 949.511495z"></path>
+</svg>
+
+            </i>
+            <span class="prev-text nav-default">My First Post</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        
+      </nav>
+    </footer>
+  </article>
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+    
+
+  
 
         </div>
       </div>

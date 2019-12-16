@@ -2,21 +2,792 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>余佩的博客</title>
-    <link>http://example.org/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on 余佩的博客</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-Hans</language>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 13 Oct 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>My First Post</title>
-      <link>http://example.org/posts/my-first-post/</link>
+      <title>About</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Sun, 20 Aug 2017 21:38:52 +0800</pubDate>
+      
+      <guid>http://localhost:1313/about/</guid>
+      
+        <description>&lt;p&gt;Hugo is a static site engine written in Go.&lt;/p&gt;
+&lt;p&gt;It makes use of a variety of open source projects including:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/spf13/cobra&#34;&gt;Cobra&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/spf13/viper&#34;&gt;Viper&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/spf13/jWalterWeatherman&#34;&gt;J Walter Weatherman&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/spf13/cast&#34;&gt;Cast&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Learn more and contribute on &lt;a href=&#34;https://github.com/gohugoio&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>《CSS知识总结》</title>
+      <link>http://localhost:1313/post/css-%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/</link>
+      <pubDate>Sun, 13 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/css-%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/</guid>
+      
+        <description>&lt;p&gt;浏览器渲染原理
+CSS 动画的两种做法（transition 和 animation）
+其他任何你想写的。&lt;/p&gt;
+&lt;h2 id=&#34;heading&#34;&gt;浏览器渲染原理&lt;/h2&gt;
+&lt;p&gt;1.根据HTML构建HTML树(DOM)&lt;/p&gt;
+&lt;p&gt;2.根据CSS构建CSS树(CSSOM)&lt;/p&gt;
+&lt;p&gt;3.将两棵树合并成一颗渲染树(render tree)&lt;/p&gt;
+&lt;p&gt;4.Layout布局(文档流，盒模型，计算大小位置)&lt;/p&gt;
+&lt;p&gt;5.Paint绘制(把边框颜色，文字颜色，阴影画出来)&lt;/p&gt;
+&lt;p&gt;6.Compose合成(根据层叠关系展示画面)&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://github.com/xpytrywork/markdown_images/blob/master/Snipaste_2019-10-13_22-43-53.png?raw=true&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;css&#34;&gt;CSS动画&lt;/h2&gt;
+&lt;p&gt;动画是指许多静止的画面（帧）以一定的速度（如每秒30张）连续播放时，肉眼因视觉残像产生错觉，而误以为是活动的画面。&lt;/p&gt;
+&lt;p&gt;帧是指每个静止的画面；&lt;/p&gt;
+&lt;p&gt;播放速度：每秒24帧（影视）或者每秒30帧（游戏）&lt;/p&gt;
+&lt;h2 id=&#34;transition--animation&#34;&gt;transition 和 animation&lt;/h2&gt;
+&lt;p&gt;transition&lt;/p&gt;
+&lt;p&gt;作用：补充中间帧&lt;/p&gt;
+&lt;p&gt;transition：属性名 时长 过渡方式 延迟&lt;/p&gt;
+&lt;p&gt;transition：left 200ms linear
+可以用逗号分隔两个不同属性&lt;/p&gt;
+&lt;p&gt;transition：left 200ms,top 400ms&lt;/p&gt;
+&lt;p&gt;可以用all代表所有属性&lt;/p&gt;
+&lt;p&gt;transition:all 200ms&lt;/p&gt;
+&lt;p&gt;过度方式有：linear/ease/ease-in/ease-out/ease-in-out/
+cubic-bezier/setp-start/step-end/steps&lt;/p&gt;
+&lt;p&gt;注意：不是所有属性都能过渡&lt;/p&gt;
+&lt;p&gt;display: none=&amp;gt;block没法过渡&lt;/p&gt;
+&lt;p&gt;一般改成visibility: hidden=&amp;gt;visible&lt;/p&gt;
+&lt;p&gt;animation：时长/过渡方式/延迟/次数/方向/填充模式/是否暂停/动画名；&lt;/p&gt;
+&lt;p&gt;时长：1s或者100ms&lt;/p&gt;
+&lt;p&gt;过渡方式：跟transition取值一样，如linear&lt;/p&gt;
+&lt;p&gt;次数：3或者2.4或者infinite&lt;/p&gt;
+&lt;p&gt;方向：reverse/alternate/alternate-reverse&lt;/p&gt;
+&lt;p&gt;填充模式：none/forwars/backwards/both&lt;/p&gt;
+&lt;p&gt;是否暂停：paused/running&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>《JavaScript数据类型》</title>
+      <link>http://localhost:1313/post/javascript%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</link>
+      <pubDate>Sun, 13 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/javascript%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</guid>
+      
+        <description>&lt;h2 id=&#34;javascript&#34;&gt;JavaScript数据类型&lt;/h2&gt;
+&lt;p&gt;JavaScript一共有七种数据类型，分别是number string boolean  symbol undefined null object&lt;/p&gt;
+&lt;h2 id=&#34;number&#34;&gt;number&lt;/h2&gt;
+&lt;p&gt;1.JavaScript 内部，所有数字都是以64位浮点数形式储存&lt;/p&gt;
+&lt;p&gt;2.由于浮点数不是精确的值，所以涉及小数的比较和运算要特别小心。&lt;/p&gt;
+&lt;p&gt;例子&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;0.1 + 0.2 === 0.3
+
+// false
+
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;3.数值精度&lt;/p&gt;
+&lt;p&gt;第1位：符号位，0表示正数，1表示负数&lt;/p&gt;
+&lt;p&gt;第2位到第12位（共11位）：指数部分&lt;/p&gt;
+&lt;p&gt;第13位到第64位（共52位）：小数部分（即有效数字）&lt;/p&gt;
+&lt;p&gt;4.数值进度&lt;/p&gt;
+&lt;p&gt;十进制：没有前导0的数值。&lt;/p&gt;
+&lt;p&gt;八进制：有前缀0o或0O的数值，或者有前导0、且只用到0-7的八个阿拉伯数字的数值。&lt;/p&gt;
+&lt;p&gt;十六进制：有前缀0x或0X的数值。&lt;/p&gt;
+&lt;p&gt;二进制：有前缀0b或0B的数值。&lt;/p&gt;
+&lt;p&gt;5.特殊数值&lt;/p&gt;
+&lt;p&gt;+0 -0 NaN Infinity&lt;/p&gt;
+&lt;p&gt;6.parseInt() 转化为整数&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;parseInt(&#39;123&#39;) // 将字符串123转化为数字123
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;string&#34;&gt;String&lt;/h2&gt;
+&lt;p&gt;1 概念：字符串就是零个或多个排在一起的字符，放在单引号或双引号之中。&lt;/p&gt;
+&lt;p&gt;单引号字符串的内部，可以使用双引号。双引号字符串的内部，可以使用单引号。&lt;/p&gt;
+&lt;p&gt;如果要在单引号字符串的内部，使用单引号，就必须在内部的单引号前面加上反斜杠，用来转义。双引号字符串内部使用双引号，也是如此。&lt;/p&gt;
+&lt;p&gt;举例&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&#39;Did she say \&#39;Hello\&#39;?&#39;
+
+// &amp;quot;Did she say &#39;Hello&#39;?&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;2.转义&lt;/p&gt;
+&lt;p&gt;反斜杠（\）在字符串内有特殊含义，用来表示一些特殊字符，所以又称为转义符。&lt;/p&gt;
+&lt;p&gt;需要用反斜杠转义的特殊字符，主要有下面这些。&lt;/p&gt;
+&lt;p&gt;\0 ：null（\u0000）&lt;/p&gt;
+&lt;p&gt;\b ：后退键（\u0008）&lt;/p&gt;
+&lt;p&gt;\f ：换页符（\u000C）&lt;/p&gt;
+&lt;p&gt;\n ：换行符（\u000A）&lt;/p&gt;
+&lt;p&gt;\r ：回车键（\u000D）&lt;/p&gt;
+&lt;p&gt;\t ：制表符（\u0009）&lt;/p&gt;
+&lt;p&gt;\v ：垂直制表符（\u000B）&lt;/p&gt;
+&lt;p&gt;&#39; ：单引号（\u0027）&lt;/p&gt;
+&lt;p&gt;&amp;quot; ：双引号（\u0022）&lt;/p&gt;
+&lt;p&gt;\ ：反斜杠（\u005C）&lt;/p&gt;
+&lt;p&gt;3.字符串与数组&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;var s = &#39;hello&#39;;
+
+s[0] // &amp;quot;h&amp;quot;
+
+s[1] // &amp;quot;e&amp;quot;
+
+s[4] // &amp;quot;o&amp;quot;
+
+// 直接对字符串使用方括号运算符
+
+&#39;hello&#39;[1] // &amp;quot;e&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;object&#34;&gt;对象(Object)&lt;/h2&gt;
+&lt;p&gt;1.概念:
+什么是对象？简单说，对象就是一组“键值对”（key-value）的集合，是一种无序的复合数据集合。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;var obj = {
+  foo: &#39;Hello&#39;
+  bar: &#39;World&#39;
+};
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;大括号就定义了一个对象，它被赋值给变量obj，所以变量obj就指向一个对象。该对象内部包含两个键值对（又称为两个“成员”），第一个键值对是foo: &amp;lsquo;Hello&amp;rsquo;，其中foo是“键名”（成员的名称），字符串Hello是“键值”（成员的值）。键名与键值之间用冒号分隔。第二个键值对是bar: &amp;lsquo;World&amp;rsquo;，bar是键名，World是键值。两个键值对之间用逗号分隔。&lt;/p&gt;
+&lt;p&gt;2.键名:对象的所有键名都是字符串（ES6 又引入了 Symbol 值也可以作为键名),如果键名是数字，也会转换为字符串&lt;/p&gt;
+&lt;p&gt;对象的每一个键名又称为“属性”（property），它的“键值”可以是任何数据类型。如果一个属性的值为函数，通常把这个属性称为“方法”，它可以像函数那样调用。&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>《JS的基本语法》</title>
+      <link>http://localhost:1313/post/js%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</link>
+      <pubDate>Mon, 07 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/js%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</guid>
+      
+        <description>&lt;p&gt;什么是表达式和语句
+标识符的规则
+if else 语句
+while for 语句
+break continue
+label&lt;/p&gt;
+&lt;h1 id=&#34;js-&#34;&gt;JS 的基本语法&lt;/h1&gt;
+&lt;p&gt;这一次博客我们记录一下JS的基本语法&lt;/p&gt;
+&lt;h2 id=&#34;heading&#34;&gt;表达式与语句&lt;/h2&gt;
+&lt;p&gt;JavaScript 程序的执行单位为行（line），也就是一行一行地执行。一般情况下，每一行就是一个语句。&lt;/p&gt;
+&lt;p&gt;语句（statement）是为了完成某种任务而进行的操作。下面一行就是语句&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;    var a = 1
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;表达式（expression），指一个为了得到返回值的计算式，举例如下&lt;/p&gt;
+&lt;p&gt;1+2的表达式的值为3&lt;/p&gt;
+&lt;p&gt;add(1,2)表达式的值为函数的返回值&lt;/p&gt;
+&lt;p&gt;console.log表达式的值为函数本身&lt;/p&gt;
+&lt;p&gt;console.log(3)表达式的值为undefined&lt;/p&gt;
+&lt;p&gt;那么二者有什么区别呢&lt;/p&gt;
+&lt;p&gt;1.表达式一般都有值，语句可能有可能没有&lt;/p&gt;
+&lt;p&gt;2.语句一般会改变环境，例如进行声明，赋值&lt;/p&gt;
+&lt;h2 id=&#34;heading-1&#34;&gt;标识符&lt;/h2&gt;
+&lt;p&gt;标识符命名规则如下。&lt;/p&gt;
+&lt;p&gt;第一个字符，可以是任意 Unicode 字母（包括英文字母和其他语言的字母），以及美元符号（$）和下划线（_）。&lt;/p&gt;
+&lt;p&gt;第二个字符及后面的字符，除了 Unicode 字母、美元符号和下划线，还可以用数字0-9。&lt;/p&gt;
+&lt;h2 id=&#34;heading-2&#34;&gt;注释&lt;/h2&gt;
+&lt;p&gt;注释分为单行注释和多行注释&lt;/p&gt;
+&lt;p&gt;// 这是单行注释&lt;/p&gt;
+&lt;p&gt;/*
+这是&lt;/p&gt;
+&lt;p&gt;多行&lt;/p&gt;
+&lt;p&gt;注释
+*/&lt;/p&gt;
+&lt;h2 id=&#34;heading-3&#34;&gt;区块&lt;/h2&gt;
+&lt;p&gt;JavaScript 使用大括号，将多个相关的语句组合在一起，称为“区块”（block）。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;{
+    let a = 1
+    let b = 2
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;其作用是把代码包在一起，常与if/while/for连用&lt;/p&gt;
+&lt;h2 id=&#34;if-else-&#34;&gt;if else 语句&lt;/h2&gt;
+&lt;p&gt;语法&lt;/p&gt;
+&lt;p&gt;if (表达式1) {语句1} else {语句2}&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;if (m === 10) {
+  // 满足条件时，执行的语句
+} else {
+  // 不满足条件时，执行的语句
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;pre&gt;&lt;code&gt;if (m === 0) {
+  // ...
+} else if (m === 1) {
+  // ...
+} else if (m === 2) {
+  // ...
+} else {
+  // ...
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;whilefor&#34;&gt;while,for语句的使用&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;while (表达式) {
+  语句;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;判断表达式真假&lt;/p&gt;
+&lt;p&gt;当表达式为真时，执行语句，执行完再判断表达式真假&lt;/p&gt;
+&lt;p&gt;当表达式为假时，执行后面的语句&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;for(语句1;表达式2;语句3){
+  循环体
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;代码执行顺序&lt;/p&gt;
+&lt;p&gt;先执行语句1&lt;/p&gt;
+&lt;p&gt;再判断表达式2&lt;/p&gt;
+&lt;p&gt;如果为真，执行循环体，最后执行语句3&lt;/p&gt;
+&lt;p&gt;如果为假，退出循环，执行后面的语句&lt;/p&gt;
+&lt;p&gt;先执行语句1&lt;/p&gt;
+&lt;h2 id=&#34;switch&#34;&gt;switch语句&lt;/h2&gt;
+&lt;p&gt;举例&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;switch (x) {
+  case 1:
+    console.log(&#39;x 等于1&#39;);
+    break;
+  case 2:
+    console.log(&#39;x 等于2&#39;);
+    break;
+  default:
+    console.log(&#39;x 等于其他值&#39;);
+}
+上面代码的default部分，是永远不会执行到的。
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;breakcontinue&#34;&gt;break和continue&lt;/h2&gt;
+&lt;p&gt;break语句和continue语句都具有跳转作用，可以让代码不按既有的顺序执行。&lt;/p&gt;
+&lt;p&gt;break语句用于跳出代码块或循环。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;var i = 0;
+while(i &amp;lt; 100) {
+  console.log(&#39;i 当前为：&#39; + i);
+  i++;
+  if (i === 10) 
+  break;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;continue语句用于立即终止本轮循环，返回循环结构的头部，开始下一轮循环。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;var i = 0;
+while (i &amp;lt; 100){
+  i++;
+  if (i % 2 === 0) 
+  continue;
+  console.log(&#39;i 当前为：&#39; + i);
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;上面代码只有在i为奇数时，才会输出i的值。如果i为偶数，则直接进入下一轮循环。&lt;/p&gt;
+&lt;h2 id=&#34;label-&#34;&gt;label 语句&lt;/h2&gt;
+&lt;p&gt;JavaScript 语言允许，语句的前面有标签（label），相当于定位符，用于跳转到程序的任意位置&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;foo: {
+  console.log(1);
+  break foo;
+  console.log(&#39;本行不会输出&#39;);
+}
+console.log(2);
+&lt;/code&gt;&lt;/pre&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>《CSS定位》</title>
+      <link>http://localhost:1313/post/%E6%B5%85%E6%9E%90-url/</link>
+      <pubDate>Sun, 29 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/%E6%B5%85%E6%9E%90-url/</guid>
+      
+        <description>&lt;h1 id=&#34;css-&#34;&gt;《CSS 定位》&lt;/h1&gt;
+&lt;p&gt;上一次的博客，我们记录了CSS的布局，有float布局，flex布局等&lt;/p&gt;
+&lt;p&gt;这次我们来介绍一下CSS定位&lt;/p&gt;
+&lt;h2 id=&#34;heading&#34;&gt;定位与布局&lt;/h2&gt;
+&lt;p&gt;首先我们要明白，布局是基于平面的，而定位是垂直于屏幕的&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>《content-box与border-box.md》</title>
+      <link>http://localhost:1313/post/content-box%E4%B8%8Eborder-box/</link>
+      <pubDate>Sat, 28 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/content-box%E4%B8%8Eborder-box/</guid>
+      
+        <description>&lt;p&gt;content-box是内容盒，内容content就是他的边界&lt;/p&gt;
+&lt;p&gt;border-box是边框盒，边框border是他的边界&lt;/p&gt;
+&lt;p&gt;content-box width=内容宽度&lt;/p&gt;
+&lt;p&gt;border-box width=border+padding+内容宽度&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>《HTML 入门笔记1》</title>
+      <link>http://localhost:1313/post/html%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B01/</link>
+      <pubDate>Sat, 28 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/html%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B01/</guid>
+      
+        <description>&lt;p&gt;HTML是由英国的李爵士发明的&lt;/p&gt;
+&lt;p&gt;HTML 最开始写!DOCTYPE html 这句话是说明这个文件的类型为HTML&lt;/p&gt;
+&lt;p&gt;h1-h6代表六个大小逐渐变小的标题，section标签是章节的意思&lt;/p&gt;
+&lt;p&gt;article文章 p段落 header头部 footer脚步 main主要内容&lt;/p&gt;
+&lt;p&gt;aside旁支内容 div划分&lt;/p&gt;
+&lt;p&gt;全局属性(所有标签都有的属性)&lt;/p&gt;
+&lt;p&gt;class,contenteditable(可编辑),hidden(隐藏看不见),&lt;/p&gt;
+&lt;p&gt;id,style,tabindex(可设置数字),title&lt;/p&gt;
+&lt;p&gt;常见的内容标签 
+ol+li(有序列表) ul+li(无序列表)&lt;/p&gt;
+&lt;p&gt;dl+dt+dd(description list,description term,description data)&lt;/p&gt;
+&lt;p&gt;pre(空格) hr(线) br(换行) a(锚点)&lt;/p&gt;
+&lt;p&gt;em(语气上的强调) strong(内容上的强调) code(代码) quote(引用) blackquote&lt;/p&gt;
+&lt;p&gt;取消落后的默认样式&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>《HTML 入门笔记1》</title>
+      <link>http://localhost:1313/post/%E6%B5%8F%E8%A7%88%E5%99%A8%E6%B8%B2%E6%9F%93%E5%8E%9F%E7%90%86/</link>
+      <pubDate>Sat, 28 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/%E6%B5%8F%E8%A7%88%E5%99%A8%E6%B8%B2%E6%9F%93%E5%8E%9F%E7%90%86/</guid>
+      
+        <description>&lt;p&gt;浏览器渲染原理
+CSS 动画的两种做法（transition 和 animation）
+其他任何你想写的。&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>《JavaScript的诞生》</title>
+      <link>http://localhost:1313/post/javascript%E7%9A%84%E8%AF%9E%E7%94%9F/</link>
+      <pubDate>Sat, 28 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/javascript%E7%9A%84%E8%AF%9E%E7%94%9F/</guid>
+      
+        <description>&lt;h2 id=&#34;javascript&#34;&gt;《JavaScript的诞生》&lt;/h2&gt;
+&lt;p&gt;HTML是由李爵士发明的，CSS由赖先生发明，JavaScript由布莱登发明&lt;/p&gt;
+&lt;p&gt;布莱登是一个美国人，当年发明JavaScript是由于他的公司要求他给浏览器增加一个脚本功能，同时由于Java的火热，所以要求蹭Java的热度。&lt;/p&gt;
+&lt;p&gt;布莱登花了十天设计了JS的最初版本，最开始命名为Mocha(类似于Java 一种咖啡)，&lt;/p&gt;
+&lt;p&gt;浏览器一开始同时支持Java和JavaScript最后JavaScript胜出&lt;/p&gt;
+&lt;p&gt;##浏览器大战&lt;/p&gt;
+&lt;p&gt;1996年，微软IE3发布，支持JScript(IE的JS)&lt;/p&gt;
+&lt;p&gt;同时网景反击，向ECMA提交了语言标准，由于版权的问题，JS语言的标准不叫JavaScript而叫ECMAScript&lt;/p&gt;
+&lt;h2 id=&#34;ecmascript&#34;&gt;ECMAScript标准的制定&lt;/h2&gt;
+&lt;p&gt;1997年6月ECMAScript第一版标准发布&lt;/p&gt;
+&lt;p&gt;1999年12月第三版发布，是使用最为广泛的标准&lt;/p&gt;
+&lt;p&gt;2009年12月第五版发布，增加了一些新的功能&lt;/p&gt;
+&lt;p&gt;2015年6月，第六版发布，之后每一年发布一版，版本号以年号命名&lt;/p&gt;
+&lt;h2 id=&#34;jsecmascript&#34;&gt;JS与ECMAScript标准的关系&lt;/h2&gt;
+&lt;p&gt;ECMAScript是纸上的标准，JS则是浏览器的再实现&lt;/p&gt;
+&lt;p&gt;纸上标准往往落后于浏览器，先实现，再写入标准&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>《JS 对象基本用法》</title>
+      <link>http://localhost:1313/post/js-%E5%AF%B9%E8%B1%A1%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/</link>
+      <pubDate>Sat, 28 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/js-%E5%AF%B9%E8%B1%A1%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/</guid>
+      
+        <description>&lt;h1 id=&#34;js-&#34;&gt;《JS 对象基本用法》&lt;/h1&gt;
+&lt;h2 id=&#34;heading&#34;&gt;序言&lt;/h2&gt;
+&lt;p&gt;对象（object）是 JavaScript 语言的核心概念，同时也是最重要最复杂的(包含了函数，数据)
+数据类型&lt;/p&gt;
+&lt;p&gt;那么什么是对象呢，简而言之可以说对象就是键值对(key-value)的集合，是一种无序的数据结构&lt;/p&gt;
+&lt;h2 id=&#34;11-&#34;&gt;1.1 对象的两种生成方法&lt;/h2&gt;
+&lt;p&gt;第一种是常用写法&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;let obj = {
+  &#39;name&#39;:&amp;quot;jack&amp;quot;,
+  &#39;age&#39;:&amp;quot;18&amp;quot;
+}
+console.log(obj)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;第二种写法并不常用,但更加官方&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;let obj1 = new Object({
+    &#39;name&#39;:&amp;quot;jack&amp;quot;,
+    &#39;age&#39;:&amp;quot;18&amp;quot;
+})
+console.log(obj1)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;上面两种方法中，大括号定义了一个对象，它被赋值给了obj，name和age被称为键名(key)，jack和18被称为键值(value)，对应的键名和键值合起来即是一个键值对，每个键值对之间用逗号隔开。&lt;/p&gt;
+&lt;h2 id=&#34;12-&#34;&gt;1.2 键名和键值的注意事项&lt;/h2&gt;
+&lt;p&gt;1.所有的键名都是字符串，即时你不加引号它也会自动转为字符串&lt;/p&gt;
+&lt;p&gt;2.变量也可以作为键名&lt;/p&gt;
+&lt;p&gt;3.键值可以是任何类型的数据，如果一个属性的值为函数，通常把这个属性称为“方法”，它可以像函数那样调用。&lt;/p&gt;
+&lt;h2 id=&#34;13-&#34;&gt;1.3 对象的增删改查&lt;/h2&gt;
+&lt;h3 id=&#34;131-&#34;&gt;1.3.1 对象的删除&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;let obj1 = new Object({
+    &#39;name&#39;:&amp;quot;jack&amp;quot;,
+    &#39;age&#39;:&amp;quot;18&amp;quot;
+})
+console.log(obj1)
+delete obj1[&#39;name&#39;]
+console.log(obj1)
+&lt;/code&gt;&lt;/pre&gt;&lt;pre&gt;&lt;code&gt;let obj1 = new Object({
+    &#39;name&#39;:&amp;quot;jack&amp;quot;,
+    &#39;age&#39;:&amp;quot;18&amp;quot;
+})
+console.log(obj1)
+delete obj1.name
+console.log(obj1)
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;132-&#34;&gt;1.3.2 对象的查看&lt;/h3&gt;
+&lt;p&gt;查看自身的所有属性&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;let obj = new Object({
+    &#39;name&#39;:&amp;quot;jack&amp;quot;,
+    &#39;age&#39;:&amp;quot;18&amp;quot;
+})
+Object.keys(obj)
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;133-&#34;&gt;1.3.3 对象的属性增加和改正&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;let obj = new Object({
+    &#39;name&#39;:&amp;quot;jack&amp;quot;,
+    &#39;age&#39;:&amp;quot;18&amp;quot;
+})
+obj.class = &amp;quot;class 1&amp;quot;
+console.log(obj)
+&lt;/code&gt;&lt;/pre&gt;&lt;pre&gt;&lt;code&gt;let obj = new Object({
+    &#39;name&#39;:&amp;quot;jack&amp;quot;,
+    &#39;age&#39;:&amp;quot;18&amp;quot;
+})
+obj[&#39;class&#39;] = &amp;quot;class 1&amp;quot;
+console.log(obj)
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;name-in-objobjhasownpropertyname&#34;&gt;&amp;lsquo;name&amp;rsquo; in obj和obj.hasOwnProperty(&amp;lsquo;name&amp;rsquo;)&lt;/h2&gt;
+&lt;p&gt;in判断的是对象的所有属性，包括对象自身及其原型的属性；&lt;/p&gt;
+&lt;p&gt;而hasOwnProperty则是判断对象自身是否具有某个属性。&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>css简介</title>
+      <link>http://localhost:1313/post/css%E7%AE%80%E4%BB%8B/</link>
+      <pubDate>Sun, 15 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/css%E7%AE%80%E4%BB%8B/</guid>
+      
+        <description>&lt;h3 id=&#34;css&#34;&gt;CSS简介&lt;/h3&gt;
+&lt;p&gt;层叠样式表(英文全称：Cascading Style Sheets)是一种用来表现HTML（标准通用标记语言的一个应用）或XML（标准通用标记语言的一个子集）等文件样式的计算机语言。CSS不仅可以静态地修饰网页，还可以配合各种脚本语言动态地对网页各元素进行格式化。&lt;/p&gt;
+&lt;p&gt;CSS 能够对网页中元素位置的排版进行像素级精确控制，支持几乎所有的字体字号样式，拥有对网页对象和模型hug样式编辑的能力。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;css-1&#34;&gt;CSS版本&lt;/h3&gt;
+&lt;p&gt;CSS2.1是目前使用最为广泛的版本。&lt;/p&gt;
+&lt;p&gt;CSS4.0是分模块进行升级的&lt;/p&gt;
+&lt;p&gt;CSS语法的注意事项&lt;/p&gt;
+&lt;p&gt;（1）所有的符号都是英文符号，如果写错了浏览器就会报警；&lt;/p&gt;
+&lt;p&gt;（2）区分大小写，a和A是完全不同的；&lt;/p&gt;
+&lt;p&gt;（3）没有//注释；&lt;/p&gt;
+&lt;p&gt;（4）最后的一个分号可以省略，但是建议不要省略；&lt;/p&gt;
+&lt;p&gt;（5）任何地方写错了，都不会报错，浏览器会直接忽略。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;heading&#34;&gt;文档流元素流动方向&lt;/h3&gt;
+&lt;p&gt;（1）inline元素从左往右，到达最右边才会换行；&lt;/p&gt;
+&lt;p&gt;（2）block元素从上往下，每一个都另起一行；&lt;/p&gt;
+&lt;p&gt;（3）inline-block也是从左往右，但是他不会把某一个进行同时暂居两行。&lt;/p&gt;
+&lt;h3 id=&#34;heading-1&#34;&gt;文档流元素的宽度计算&lt;/h3&gt;
+&lt;p&gt;inline元素宽度是由他里面的所有内联元素合起来的；&lt;/p&gt;
+&lt;p&gt;block默认自动计算宽度，可用width指定；&lt;/p&gt;
+&lt;p&gt;inline-block结合两者特点，可用width指定；&lt;/p&gt;
+&lt;h3 id=&#34;heading-2&#34;&gt;文档流元素的高度计算&lt;/h3&gt;
+&lt;p&gt;inline高度由line-height间接确定的，跟 height无关；&lt;/p&gt;
+&lt;p&gt;block高度由内部文档流元素决定，可设置 height；&lt;/p&gt;
+&lt;p&gt;inline-block跟block类似，可以设置height;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;盒模型&lt;/p&gt;
+&lt;p&gt;content-box：只是以内容为中心的模型；&lt;/p&gt;
+&lt;p&gt;border-box：包含centent padding border;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;css-2&#34;&gt;CSS布局&lt;/h3&gt;
+&lt;p&gt;float布局模式（兼容IE）&lt;/p&gt;
+&lt;p&gt;步骤：&lt;/p&gt;
+&lt;p&gt;子元素上加float&lt;/p&gt;
+&lt;p&gt;父元素上加clearfix,一定要加上&lt;/p&gt;
+&lt;p&gt;clearfix书写如下&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;clearfix&lt;/span&gt;::&lt;span style=&#34;color:#a6e22e&#34;&gt;after&lt;/span&gt;{
+&lt;span style=&#34;color:#66d9ef&#34;&gt;content&lt;/span&gt;:&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&amp;#39;&lt;/span&gt;;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;display&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;block&lt;/span&gt;;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;clear&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;both&lt;/span&gt;;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;缺点 不兼容手机端，手机端不要想着用float布局&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;grid&#34;&gt;Grid布局（只兼容最新版浏览器，二维，大多数不能完美兼容，这里不展开叙述）&lt;/h3&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;flex&#34;&gt;flex布局(非常好用的一种布局方式)&lt;/h3&gt;
+&lt;h4 id=&#34;container&#34;&gt;容器属性(container)&lt;/h4&gt;
+&lt;p&gt;flex-direction　　容器内项目的排列方向(默认横向排列)
+　　
+flex-wrap　　容器内项目换行方式&lt;/p&gt;
+&lt;p&gt;flex-flow　　以上两个属性的简写方式&lt;/p&gt;
+&lt;p&gt;justify-content　　项目在主轴上的对齐方式&lt;/p&gt;
+&lt;p&gt;align-items　　项目在交叉轴上如何对齐&lt;/p&gt;
+&lt;p&gt;align-content　　定义了多根轴线的对齐方式。如果项目只有一根轴线，该属性不起作用。&lt;/p&gt;
+&lt;h5 id=&#34;item&#34;&gt;项目属性(item)&lt;/h5&gt;
+&lt;p&gt;order　　项目的排列顺序。数值越小，排列越靠前，默认为0。&lt;/p&gt;
+&lt;p&gt;flex-grow　　项目的放大比例，默认为0，即如果存在剩余空间，也不放大。&lt;/p&gt;
+&lt;p&gt;flex-shrink　　项目的缩小比例，默认为1，即如果空间不足，该项目将缩小。&lt;/p&gt;
+&lt;p&gt;flex-basis　　在分配多余空间之前，项目占据的主轴空间（main size）。浏览器根据这个属性，计算主轴是否有多余空间。它的默认值为auto，即项目的本来大小。&lt;/p&gt;
+&lt;p&gt;flex　　是flex-grow, flex-shrink 和 flex-basis的简写，默认值为0 1 auto。后两个属性可选。&lt;/p&gt;
+&lt;p&gt;align-items属性。默认值为auto，表示继承父元素的align-items属性，如果没有父元素，则等同于stretch。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;这次的博客到此为止，下次我们来试试做具体的布局案例&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>《如何用 hugo 搭建个人博客》</title>
+      <link>http://localhost:1313/post/%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2/</link>
+      <pubDate>Sun, 08 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2/</guid>
+      
+        <description>&lt;h2 id=&#34;-hugo-&#34;&gt;如何用 hugo 搭建个人博客&lt;/h2&gt;
+&lt;p&gt;记录一下如何快速使用hugo技术搭建一个属于自己的博客&lt;/p&gt;
+&lt;p&gt;1.首先进入hugo的官网下载安装hugo &lt;a href=&#34;https://gohugo.io/getting-started/installing&#34;&gt;https://gohugo.io/getting-started/installing&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;解压之后的路径需要加入到path路径之中&lt;/p&gt;
+&lt;p&gt;添加成功之后 在命令行中使用 hugo version会出现版本号，这时即成功&lt;/p&gt;
+&lt;p&gt;2.进入hugo官网，点击quick start&lt;/p&gt;
+&lt;p&gt;在命令行中按照步骤2-7执行&lt;/p&gt;
+&lt;p&gt;之后得到一个public目录，里面就有我们需要的博客站点网页(但是index.html打开没用，这并不是给用户看的)&lt;/p&gt;
+&lt;p&gt;hugo server -D可以预览草稿&lt;/p&gt;
+&lt;p&gt;3.使用 hugo server预览&lt;/p&gt;
+&lt;p&gt;4.使用了hugo之后，如果想更换主题，可以在浏览器上搜索，来更换自己喜欢的主题&lt;/p&gt;
+&lt;p&gt;在本地搭建完自己的博客之后，我们还可以把它上传到github上，首先创建一个仓库
+进入public目录，git init ， git add . ,git commit -m “”
+关联远程仓库git remote add origin &lt;a href=&#34;mailto:git@github.com&#34;&gt;git@github.com&lt;/a&gt;(输入你自己的)
+打开自己的github pages就可以看到自己的博客了&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/post/css%E7%9A%84%E4%BA%94%E7%A7%8D%E5%BC%95%E5%85%A5%E6%96%B9%E5%BC%8F/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/posts/my-first-post/</guid>
-      <description>这是我的第一篇hugo博客</description>
+      <guid>http://localhost:1313/post/css%E7%9A%84%E4%BA%94%E7%A7%8D%E5%BC%95%E5%85%A5%E6%96%B9%E5%BC%8F/</guid>
+      
+        <description>&lt;h1 id=&#34;css&#34;&gt;css的五种引入方式&lt;/h1&gt;
+&lt;h2 id=&#34;1&#34;&gt;1.行内式&lt;/h2&gt;
+&lt;p&gt;直接在标签里写属性
+例如&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;body bgcolor=&#39;red&#39;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;2&#34;&gt;2.内联式&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;body style=&amp;quot;background-color: grey&amp;quot;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;3style&#34;&gt;3.style嵌入式&lt;/h2&gt;
+&lt;p&gt;在head里面加入一个style标签&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;style&amp;gt;
+body{
+    background:red;
+}
+&amp;lt;/style&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;4&#34;&gt;4.外联式(用的最为普遍)&lt;/h2&gt;
+&lt;p&gt;在head里面加入&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;&amp;quot;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;5csscss&#34;&gt;5.就是CSS里面引入另外一CSS。&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;@import url(./b.css);
+&lt;/code&gt;&lt;/pre&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/post/jquery/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/jquery/</guid>
+      
+        <description>&lt;h1 id=&#34;jquery&#34;&gt;jQuery&lt;/h1&gt;
+&lt;h2 id=&#34;jquery-&#34;&gt;jQuery 获取元素&lt;/h2&gt;
+&lt;p&gt;jQuery的最基本概念是“选择一些元素并对其进行处理”，可以使用CSS选择器,下面是jQuery获取元素的方式&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$(document) //选择整个文档对象
+$(&#39;#myId&#39;) //选择ID为myId的网页元素
+$(&#39;div.myClass&#39;) // 选择class为myClass的div元素
+$(&#39;input[name=first]&#39;) // 选择name属性等于first的input元素
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;也可以使用jQuery特有的&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$(&#39;a:first&#39;)，获取网页中第一个a元素
+$(&#39;:header&#39;) ，获取所有标题元素
+$(&#39;div:visible&#39;)，获取可见的div元素
+$(&#39;div:gt(2)&#39;) // 选择所有的div元素，除了前三个
+$(&#39;tr:odd&#39;)，获取所有奇数元素
+$(&#39;tr:even&#39;)，获取所有偶数元素
+$(&#39;:animated&#39;) ，获取所有动画元素
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;jquery--1&#34;&gt;jQuery 的链式操作&lt;/h2&gt;
+&lt;p&gt;jQuery的链式操作就是最终选中网页元素以后，可以对它进行一系列操作，并且所有操作可以连接在一起，以链条的形式写出来，比如：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$(&#39;div&#39;).find(&#39;h3&#39;).eq(2).html(&#39;Hello&#39;);
+分解开就是
+$(&#39;div&#39;) //找到div元素
+.find(&#39;h3&#39;) //选择其中的h3元素
+.eq(2) //选择第3个h3元素
+.html(&#39;Hello&#39;); //将它的内容改为Hello
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;它的原理在于每一步的jQuery操作，返回的都是一个jQuery对象，所以不同操作可以连在一起。&lt;/p&gt;
+&lt;h2 id=&#34;jquery--2&#34;&gt;用jQuery 创建元素&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;const $div1 = $(&#39;&amp;lt;div&amp;gt;新建元素&amp;lt;/div&amp;gt;&#39;)
+//创建元素后，如果需要将其添加
+$div1.appendTo(document.body)
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;jquery-1&#34;&gt;用jQuery移动元素&lt;/h2&gt;
+&lt;p&gt;jQuery来操作元素在网页中的位置移动。一组方法是直接移动该元素，另一组方法是移动其他元素，使得目标元素达到我们想要的位置。&lt;/p&gt;
+&lt;p&gt;第一种方法是使用.insertAfter()，把div元素移动p元素后面：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$(&#39;div&#39;).insertAfter($(&#39;p&#39;));
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;第二种方法是使用.after()，把p元素加到div元素前面&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$(&#39;p&#39;).after($(&#39;div&#39;));
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;看起来这两种方法效果一样，但实际上他们返回的元素不一
+样，第一种方法是返回的是div元素，第二种方法是返回p元素。
+还有其他方法也遵循这种模式：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;.insertAfter()和.after()：在现存元素的外部，从后面插入元素
+
+.insertBefore()和.before()：在现存元素的外部，从前面插入元素
+
+.appendTo()和.append()：在现存元素的内部，从后面插入元素
+
+.prependTo()和.prepend()：在现存元素的内部，从前面插入元素
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;如果需要存储对添加到页面中的元素引用，那么采用第一种方法，因为会返回要移动的元素。&lt;/p&gt;
+&lt;h2 id=&#34;jquery--3&#34;&gt;jQuery 修改元素的内容&lt;/h2&gt;
+&lt;p&gt;jQuery设计思想之一就是使用同一个函数实现读与写，即getter和setter合一。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$div.text()
+text()里没有参数，可直接写，如有参数即可进行修改。
+$div.html() //读写html内容
+$div.attr(&#39;tittle&#39;, ) //读写属性
+$div.css({color: &#39;red&#39;}) //读写style
+&lt;/code&gt;&lt;/pre&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/post/%E5%85%B3%E4%BA%8Ehtml%E7%9A%84%E7%AE%80%E5%8D%95%E4%BB%8B%E7%BB%8D/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/%E5%85%B3%E4%BA%8Ehtml%E7%9A%84%E7%AE%80%E5%8D%95%E4%BB%8B%E7%BB%8D/</guid>
+      
+        <description>&lt;h1 id=&#34;html&#34;&gt;关于html的简单介绍&lt;/h1&gt;
+&lt;h2 id=&#34;1html&#34;&gt;1.什么是html&lt;/h2&gt;
+&lt;p&gt;HTML全称为（超文本标记语言——HyperText Markup Language）
+HTML (HyperText Markup Language) 不是一门编程语言，
+而是一种用来告知浏览器如何组织页面的标记语言。HTML 可复杂、可简单，一切取决于开发者。
+它由一系列的元素（elements）组成，这些元素可以用来包围不同部分的内容，使其以某种方式呈现或者工作。 
+一对标签（ tags）可以为一段文字或者一张图片添加超链接，将文字设置为斜体，改变字号，等等。&lt;/p&gt;
+&lt;h2 id=&#34;2html&#34;&gt;2.剖析一个html元素&lt;/h2&gt;
+&lt;p&gt;以一张图片为例子&lt;/p&gt;
+&lt;h2 id=&#34;3&#34;&gt;3.内联元素与块级元素&lt;/h2&gt;
+&lt;p&gt;块级元素在页面中以块的形式展现 —— 相对于其前面的内容它会出现在新的一行，其后的内容也会被挤到下一行展现。块级元素通常用于展示页面上结构化的内容，例如段落、列表、导航菜单、页脚等等。一个以block形式展现的块级元素不会被嵌套进内联元素中，但可以嵌套在其它块级元素中。&lt;/p&gt;
+&lt;p&gt;内联元素通常出现在块级元素中并环绕文档内容的一小部分，而不是一整个段落或者一组内容。内联元素不会导致文本换行。&lt;/p&gt;
+&lt;h2 id=&#34;4&#34;&gt;4.空元素&lt;/h2&gt;
+&lt;p&gt;一个空元素（empty element）可能是 HTML，SVG，或者 MathML 里的一个不可能存在子节点（例如内嵌的元素或者元素内的文本）的element。&lt;/p&gt;
+&lt;p&gt;在 HTML 中，通常在一个空元素上使用一个闭标签是无效的。例如， &lt;code&gt;&amp;lt;input type=&amp;quot;text&amp;quot;&amp;gt;&amp;lt;/input&amp;gt; &lt;/code&gt;的闭标签是无效的 HTML。&lt;/p&gt;
+&lt;p&gt;在 HTML 中有以下这些空元素：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;area&amp;gt;
+&amp;lt;base&amp;gt;
+&amp;lt;br&amp;gt;
+&amp;lt;col&amp;gt;
+&amp;lt;colgroup&amp;gt; when the span is present
+&amp;lt;command&amp;gt;
+&amp;lt;embed&amp;gt;
+&amp;lt;hr&amp;gt;
+&amp;lt;img&amp;gt;
+&amp;lt;input&amp;gt;
+&amp;lt;keygen&amp;gt;
+&amp;lt;link&amp;gt;
+&amp;lt;meta&amp;gt;
+&amp;lt;param&amp;gt;
+&amp;lt;source&amp;gt;
+&amp;lt;track&amp;gt;
+&amp;lt;wbr&amp;gt; 
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;heading&#34;&gt;元素的属性&lt;/h2&gt;
+&lt;p&gt;属性包含元素的额外信息，这些信息不会出现在实际的内容中。例如class属性给元素赋了一个识别的名字，这个名字此后可以被用来识别此元素的样式信息和其他信息。&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>My First Post</title>
+      <link>http://localhost:1313/post/my-first-post/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/my-first-post/</guid>
+      
+        <description>&lt;p&gt;这是我的第一篇hugo博客&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>《JS 函数》</title>
+      <link>http://localhost:1313/post/js%E5%87%BD%E6%95%B0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/js%E5%87%BD%E6%95%B0/</guid>
+      
+        <description>&lt;h1 id=&#34;js&#34;&gt;JS函数&lt;/h1&gt;
+&lt;p&gt;本篇博客将为大家介绍&lt;/p&gt;
+&lt;p&gt;1.函数的声明方式&lt;/p&gt;
+&lt;p&gt;2.函数的闭包&lt;/p&gt;
+&lt;p&gt;3.函数的本质&lt;/p&gt;
+&lt;p&gt;4.JS函数调用时机&lt;/p&gt;
+&lt;h1 id=&#34;heading&#34;&gt;函数的声明方式&lt;/h1&gt;
+&lt;p&gt;1.构造具名函数&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;function 函数名(形参1,形参2){
+    语句;
+    return 返回值
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;2.构造匿名函数&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;let a = function(x,y){
+    语句;
+    return 返回值
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;3.构造箭头函数&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;let b = (x,y)=&amp;gt;{
+    return x+y;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;4.window.Function构造函数，这种方法使用比较复杂，有兴趣的朋友可以自己去了解&lt;/p&gt;
+&lt;p&gt;这里我们补充一下函数的name,也就是函数名。&lt;/p&gt;
+&lt;p&gt;具名函数的函数名 即是function后面所跟的名字&lt;/p&gt;
+&lt;p&gt;匿名函数(箭头函数函数名 即是被赋予的变量名&lt;/p&gt;
+&lt;h2 id=&#34;heading-1&#34;&gt;函数的作用域&lt;/h2&gt;
+&lt;p&gt;函数的作用域可以用一句话来归纳那就是就近原则，我们用一个例子来理解&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;function f1(){
+let a = 1
+function f2(){
+let a = 2
+console.log(a)
+}
+console.log(a)
+a = 3
+f2()
+}
+f1()
+
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;那么什么是闭包呢，闭包就是「函数」和「函数内部能访问到的变量」（也叫环境）的总和&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;var local = &#39;变量&#39;
+function foo{
+    console.log(local)
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;闭包就是变量local与函数foo&lt;/p&gt;
+&lt;p&gt;那么闭包是用来干什么的呢？&lt;/p&gt;
+&lt;p&gt;闭包常常用来「间接访问一个变量」。换句话说，「隐藏一个变量」。&lt;/p&gt;
+&lt;p&gt;#函数的本质&lt;/p&gt;
+&lt;p&gt;函数的本质是对象，是一段能够反复调用的代码块，我们通过传递不同的参数，返回不同的值，&lt;/p&gt;
+&lt;p&gt;得到我们想要的结果，比如&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;let getArea = r=&amp;gt;{
+    return 2*3.14*r*r
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;我们传入不同的参数，就可以得到不同的圆的面积&lt;/p&gt;
+&lt;p&gt;#函数的作用时机&lt;/p&gt;
+&lt;p&gt;例&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;let i = 0
+for(i = 0; i&amp;lt;6; i++){
+  setTimeout(()=&amp;gt;{
+    console.log(i)
+  },0)
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;这时候打印出来的结果是6个6，为什么会这样呢，因为setTimeout有等会再执行的意思，所以这里会将for循环执行完后再打印，此时i的值为6&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;for(let i=0;i&amp;lt;6;i++){
+setTimeout(()=&amp;gt;{
+    console.log(i)
+  },0)
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;当我们把i放在里面，for和let一起使用，这时每个i都会复制一次，所以每次都会打出一个复制的i，结果就是0 1 2 3 4 5&lt;/p&gt;
+&lt;p&gt;其他方法打印出0-5&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;let i=(x)=&amp;gt;{
+    if(x&amp;lt;6){
+        return x
+    }
+}
+i(1)
+i(2)
+i(3)
+i(4)
+i(5)
+&lt;/code&gt;&lt;/pre&gt;</description>
+      
     </item>
     
   </channel>

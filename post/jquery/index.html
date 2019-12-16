@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>404 page not found - 余佩的博客</title>
+  <title> - 余佩的博客</title>
   
 
 <meta name="renderer" content="webkit" />
@@ -23,7 +23,18 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="🐟" />
-  <meta name="description" content="Hugo theme jane example site." />
+  <meta name="description" content="jQuery jQuery 获取元素 jQuery的最基本概念是“选择一些元素并对其进行处理”，可以使用CSS选择器,下面是jQuery获取元素的方式
+$(document) //选择整个文档对象$(&#39;#myId&#39;) //选择ID为myId的网页元素$(&#39;div.myClass&#39;) // 选择class为myClass的div元素$(&#39;input[name=first]&#39;) // 选择name属性等于first的input元素也可以使用jQuery特有的
+$(&#39;a:first&#39;)，获取网页中第一个a元素$(&#39;:header&#39;) ，获取所有标题元素$(&#39;div:visible&#39;)，获取可见的div元素$(&#39;div:gt(2)&#39;) // 选择所有的div元素，除了前三个$(&#39;tr:odd&#39;)，获取所有奇数元素$(&#39;tr:even&#39;)，获取所有偶数元素$(&#39;:animated&#39;) ，获取所有动画元素jQuery 的链式操作 jQuery的链式操作就是最终选中网页元素以后，可以对它进行一系列操作，并且所有操作可以连接在一起，以链条的形式写出来，比如：
+$(&#39;div&#39;).find(&#39;h3&#39;).eq(2).html(&#39;Hello&#39;);分解开就是$(&#39;div&#39;) //找到div元素.find(&#39;h3&#39;) //选择其中的h3元素.eq(2) //选择第3个h3元素.html(&#39;Hello&#39;); //将它的内容改为Hello它的原理在于每一步的jQuery操作，返回的都是一个jQuery对象，所以不同操作可以连在一起。
+用jQuery 创建元素 const $div1 = $(&#39;&amp;lt;div&amp;gt;新建元素&amp;lt;/div&amp;gt;&#39;)//创建元素后，如果需要将其添加$div1.appendTo(document.body)用jQuery移动元素 jQuery来操作元素在网页中的位置移动。一组方法是直接移动该元素，另一组方法是移动其他元素，使得目标元素达到我们想要的位置。
+第一种方法是使用.insertAfter()，把div元素移动p元素后面：
+$(&#39;div&#39;).insertAfter($(&#39;p&#39;));第二种方法是使用.after()，把p元素加到div元素前面
+$(&#39;p&#39;).after($(&#39;div&#39;));看起来这两种方法效果一样，但实际上他们返回的元素不一 样，第一种方法是返回的是div元素，第二种方法是返回p元素。 还有其他方法也遵循这种模式：
+.insertAfter()和.after()：在现存元素的外部，从后面插入元素.insertBefore()和.before()：在现存元素的外部，从前面插入元素.appendTo()和.append()：在现存元素的内部，从后面插入元素.prependTo()和.prepend()：在现存元素的内部，从前面插入元素如果需要存储对添加到页面中的元素引用，那么采用第一种方法，因为会返回要移动的元素。
+jQuery 修改元素的内容 jQuery设计思想之一就是使用同一个函数实现读与写，即getter和setter合一。
+$div.text()text()里没有参数，可直接写，如有参数即可进行修改。$div.html() //读写html内容$div.attr(&#39;tittle&#39;, ) //读写属性$div." />
+
   <meta name="keywords" content="Hugo, theme, jane" />
 
 
@@ -34,7 +45,7 @@
 <meta name="generator" content="Hugo 0.61.0" />
 
 
-<link rel="canonical" href="http://localhost:1313/404.html" />
+<link rel="canonical" href="http://localhost:1313/post/jquery/" />
 
 
 
@@ -58,15 +69,51 @@
 
 
 
-<meta property="og:title" content="404 Page not found" />
-<meta property="og:description" content="Hugo theme jane example site." />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="http://localhost:1313/404.html" />
+<meta property="og:title" content="" />
+<meta property="og:description" content="jQuery jQuery 获取元素 jQuery的最基本概念是“选择一些元素并对其进行处理”，可以使用CSS选择器,下面是jQuery获取元素的方式
+$(document) //选择整个文档对象$(&#39;#myId&#39;) //选择ID为myId的网页元素$(&#39;div.myClass&#39;) // 选择class为myClass的div元素$(&#39;input[name=first]&#39;) // 选择name属性等于first的input元素也可以使用jQuery特有的
+$(&#39;a:first&#39;)，获取网页中第一个a元素$(&#39;:header&#39;) ，获取所有标题元素$(&#39;div:visible&#39;)，获取可见的div元素$(&#39;div:gt(2)&#39;) // 选择所有的div元素，除了前三个$(&#39;tr:odd&#39;)，获取所有奇数元素$(&#39;tr:even&#39;)，获取所有偶数元素$(&#39;:animated&#39;) ，获取所有动画元素jQuery 的链式操作 jQuery的链式操作就是最终选中网页元素以后，可以对它进行一系列操作，并且所有操作可以连接在一起，以链条的形式写出来，比如：
+$(&#39;div&#39;).find(&#39;h3&#39;).eq(2).html(&#39;Hello&#39;);分解开就是$(&#39;div&#39;) //找到div元素.find(&#39;h3&#39;) //选择其中的h3元素.eq(2) //选择第3个h3元素.html(&#39;Hello&#39;); //将它的内容改为Hello它的原理在于每一步的jQuery操作，返回的都是一个jQuery对象，所以不同操作可以连在一起。
+用jQuery 创建元素 const $div1 = $(&#39;&lt;div&gt;新建元素&lt;/div&gt;&#39;)//创建元素后，如果需要将其添加$div1.appendTo(document.body)用jQuery移动元素 jQuery来操作元素在网页中的位置移动。一组方法是直接移动该元素，另一组方法是移动其他元素，使得目标元素达到我们想要的位置。
+第一种方法是使用.insertAfter()，把div元素移动p元素后面：
+$(&#39;div&#39;).insertAfter($(&#39;p&#39;));第二种方法是使用.after()，把p元素加到div元素前面
+$(&#39;p&#39;).after($(&#39;div&#39;));看起来这两种方法效果一样，但实际上他们返回的元素不一 样，第一种方法是返回的是div元素，第二种方法是返回p元素。 还有其他方法也遵循这种模式：
+.insertAfter()和.after()：在现存元素的外部，从后面插入元素.insertBefore()和.before()：在现存元素的外部，从前面插入元素.appendTo()和.append()：在现存元素的内部，从后面插入元素.prependTo()和.prepend()：在现存元素的内部，从前面插入元素如果需要存储对添加到页面中的元素引用，那么采用第一种方法，因为会返回要移动的元素。
+jQuery 修改元素的内容 jQuery设计思想之一就是使用同一个函数实现读与写，即getter和setter合一。
+$div.text()text()里没有参数，可直接写，如有参数即可进行修改。$div.html() //读写html内容$div.attr(&#39;tittle&#39;, ) //读写属性$div." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/post/jquery/" />
 
-<meta itemprop="name" content="404 Page not found">
-<meta itemprop="description" content="Hugo theme jane example site."><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="404 Page not found"/>
-<meta name="twitter:description" content="Hugo theme jane example site."/>
+<meta itemprop="name" content="">
+<meta itemprop="description" content="jQuery jQuery 获取元素 jQuery的最基本概念是“选择一些元素并对其进行处理”，可以使用CSS选择器,下面是jQuery获取元素的方式
+$(document) //选择整个文档对象$(&#39;#myId&#39;) //选择ID为myId的网页元素$(&#39;div.myClass&#39;) // 选择class为myClass的div元素$(&#39;input[name=first]&#39;) // 选择name属性等于first的input元素也可以使用jQuery特有的
+$(&#39;a:first&#39;)，获取网页中第一个a元素$(&#39;:header&#39;) ，获取所有标题元素$(&#39;div:visible&#39;)，获取可见的div元素$(&#39;div:gt(2)&#39;) // 选择所有的div元素，除了前三个$(&#39;tr:odd&#39;)，获取所有奇数元素$(&#39;tr:even&#39;)，获取所有偶数元素$(&#39;:animated&#39;) ，获取所有动画元素jQuery 的链式操作 jQuery的链式操作就是最终选中网页元素以后，可以对它进行一系列操作，并且所有操作可以连接在一起，以链条的形式写出来，比如：
+$(&#39;div&#39;).find(&#39;h3&#39;).eq(2).html(&#39;Hello&#39;);分解开就是$(&#39;div&#39;) //找到div元素.find(&#39;h3&#39;) //选择其中的h3元素.eq(2) //选择第3个h3元素.html(&#39;Hello&#39;); //将它的内容改为Hello它的原理在于每一步的jQuery操作，返回的都是一个jQuery对象，所以不同操作可以连在一起。
+用jQuery 创建元素 const $div1 = $(&#39;&lt;div&gt;新建元素&lt;/div&gt;&#39;)//创建元素后，如果需要将其添加$div1.appendTo(document.body)用jQuery移动元素 jQuery来操作元素在网页中的位置移动。一组方法是直接移动该元素，另一组方法是移动其他元素，使得目标元素达到我们想要的位置。
+第一种方法是使用.insertAfter()，把div元素移动p元素后面：
+$(&#39;div&#39;).insertAfter($(&#39;p&#39;));第二种方法是使用.after()，把p元素加到div元素前面
+$(&#39;p&#39;).after($(&#39;div&#39;));看起来这两种方法效果一样，但实际上他们返回的元素不一 样，第一种方法是返回的是div元素，第二种方法是返回p元素。 还有其他方法也遵循这种模式：
+.insertAfter()和.after()：在现存元素的外部，从后面插入元素.insertBefore()和.before()：在现存元素的外部，从前面插入元素.appendTo()和.append()：在现存元素的内部，从后面插入元素.prependTo()和.prepend()：在现存元素的内部，从前面插入元素如果需要存储对添加到页面中的元素引用，那么采用第一种方法，因为会返回要移动的元素。
+jQuery 修改元素的内容 jQuery设计思想之一就是使用同一个函数实现读与写，即getter和setter合一。
+$div.text()text()里没有参数，可直接写，如有参数即可进行修改。$div.html() //读写html内容$div.attr(&#39;tittle&#39;, ) //读写属性$div.">
+
+<meta itemprop="wordCount" content="75">
+
+
+
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content="jQuery jQuery 获取元素 jQuery的最基本概念是“选择一些元素并对其进行处理”，可以使用CSS选择器,下面是jQuery获取元素的方式
+$(document) //选择整个文档对象$(&#39;#myId&#39;) //选择ID为myId的网页元素$(&#39;div.myClass&#39;) // 选择class为myClass的div元素$(&#39;input[name=first]&#39;) // 选择name属性等于first的input元素也可以使用jQuery特有的
+$(&#39;a:first&#39;)，获取网页中第一个a元素$(&#39;:header&#39;) ，获取所有标题元素$(&#39;div:visible&#39;)，获取可见的div元素$(&#39;div:gt(2)&#39;) // 选择所有的div元素，除了前三个$(&#39;tr:odd&#39;)，获取所有奇数元素$(&#39;tr:even&#39;)，获取所有偶数元素$(&#39;:animated&#39;) ，获取所有动画元素jQuery 的链式操作 jQuery的链式操作就是最终选中网页元素以后，可以对它进行一系列操作，并且所有操作可以连接在一起，以链条的形式写出来，比如：
+$(&#39;div&#39;).find(&#39;h3&#39;).eq(2).html(&#39;Hello&#39;);分解开就是$(&#39;div&#39;) //找到div元素.find(&#39;h3&#39;) //选择其中的h3元素.eq(2) //选择第3个h3元素.html(&#39;Hello&#39;); //将它的内容改为Hello它的原理在于每一步的jQuery操作，返回的都是一个jQuery对象，所以不同操作可以连在一起。
+用jQuery 创建元素 const $div1 = $(&#39;&lt;div&gt;新建元素&lt;/div&gt;&#39;)//创建元素后，如果需要将其添加$div1.appendTo(document.body)用jQuery移动元素 jQuery来操作元素在网页中的位置移动。一组方法是直接移动该元素，另一组方法是移动其他元素，使得目标元素达到我们想要的位置。
+第一种方法是使用.insertAfter()，把div元素移动p元素后面：
+$(&#39;div&#39;).insertAfter($(&#39;p&#39;));第二种方法是使用.after()，把p元素加到div元素前面
+$(&#39;p&#39;).after($(&#39;div&#39;));看起来这两种方法效果一样，但实际上他们返回的元素不一 样，第一种方法是返回的是div元素，第二种方法是返回p元素。 还有其他方法也遵循这种模式：
+.insertAfter()和.after()：在现存元素的外部，从后面插入元素.insertBefore()和.before()：在现存元素的外部，从前面插入元素.appendTo()和.append()：在现存元素的内部，从后面插入元素.prependTo()和.prepend()：在现存元素的内部，从前面插入元素如果需要存储对添加到页面中的元素引用，那么采用第一种方法，因为会返回要移动的元素。
+jQuery 修改元素的内容 jQuery设计思想之一就是使用同一个函数实现读与写，即getter和setter合一。
+$div.text()text()里没有参数，可直接写，如有参数即可进行修改。$div.html() //读写html内容$div.attr(&#39;tittle&#39;, ) //读写属性$div."/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -325,21 +372,182 @@
     <main id="main" class="main bg-llight">
       <div class="content-wrapper">
         <div id="content" class="content container">
-          
-<div class="not-found">
-  <h1 class="error-emoji"></h1>
-  <p class="error-text">/* 404 page not found. */</p>
-  <p class="error-link"><a href="/">↑ Back Home ↑</a></p>
+          <article class="post bg-white">
+    
+    <header class="post-header">
+      <h1 class="post-title"></h1>
+      
+      <div class="post-meta">
+        <time datetime="0001-01-01" class="post-time">
+          0001-01-01
+        </time>
+        
+        
+
+        
+        
+
+        
+        
+      </div>
+    </header>
+
+    
+    
+<div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#jquery-">jQuery 获取元素</a></li>
+    <li><a href="#jquery--1">jQuery 的链式操作</a></li>
+    <li><a href="#jquery--2">用jQuery 创建元素</a></li>
+    <li><a href="#jquery-1">用jQuery移动元素</a></li>
+    <li><a href="#jquery--3">jQuery 修改元素的内容</a></li>
+  </ul>
+</nav>
+  </div>
 </div>
-<script>
-  var errorEmojiContainer = document.getElementsByClassName('error-emoji')[0];
-  var emojiArray = [
-    '\\(o_o)/', '(o^^)o', '(˚Δ˚)b', '(^-^*)', '(≥o≤)', '(^_^)b', '(·_·)',
-    '(=\'X\'=)', '(>_<)', '(;-;)', '\\(^Д^)/',
-  ];
-  var errorEmoji = emojiArray[Math.floor(Math.random() * emojiArray.length)];
-  errorEmojiContainer.appendChild(document.createTextNode(errorEmoji));
-</script>
+
+    
+    <div class="post-content">
+      <h1 id="jquery">jQuery</h1>
+<h2 id="jquery-">jQuery 获取元素</h2>
+<p>jQuery的最基本概念是“选择一些元素并对其进行处理”，可以使用CSS选择器,下面是jQuery获取元素的方式</p>
+<pre><code>$(document) //选择整个文档对象
+$('#myId') //选择ID为myId的网页元素
+$('div.myClass') // 选择class为myClass的div元素
+$('input[name=first]') // 选择name属性等于first的input元素
+</code></pre><p>也可以使用jQuery特有的</p>
+<pre><code>$('a:first')，获取网页中第一个a元素
+$(':header') ，获取所有标题元素
+$('div:visible')，获取可见的div元素
+$('div:gt(2)') // 选择所有的div元素，除了前三个
+$('tr:odd')，获取所有奇数元素
+$('tr:even')，获取所有偶数元素
+$(':animated') ，获取所有动画元素
+</code></pre><h2 id="jquery--1">jQuery 的链式操作</h2>
+<p>jQuery的链式操作就是最终选中网页元素以后，可以对它进行一系列操作，并且所有操作可以连接在一起，以链条的形式写出来，比如：</p>
+<pre><code>$('div').find('h3').eq(2).html('Hello');
+分解开就是
+$('div') //找到div元素
+.find('h3') //选择其中的h3元素
+.eq(2) //选择第3个h3元素
+.html('Hello'); //将它的内容改为Hello
+</code></pre><p>它的原理在于每一步的jQuery操作，返回的都是一个jQuery对象，所以不同操作可以连在一起。</p>
+<h2 id="jquery--2">用jQuery 创建元素</h2>
+<pre><code>const $div1 = $('&lt;div&gt;新建元素&lt;/div&gt;')
+//创建元素后，如果需要将其添加
+$div1.appendTo(document.body)
+</code></pre><h2 id="jquery-1">用jQuery移动元素</h2>
+<p>jQuery来操作元素在网页中的位置移动。一组方法是直接移动该元素，另一组方法是移动其他元素，使得目标元素达到我们想要的位置。</p>
+<p>第一种方法是使用.insertAfter()，把div元素移动p元素后面：</p>
+<pre><code>$('div').insertAfter($('p'));
+</code></pre><p>第二种方法是使用.after()，把p元素加到div元素前面</p>
+<pre><code>$('p').after($('div'));
+</code></pre><p>看起来这两种方法效果一样，但实际上他们返回的元素不一
+样，第一种方法是返回的是div元素，第二种方法是返回p元素。
+还有其他方法也遵循这种模式：</p>
+<pre><code>.insertAfter()和.after()：在现存元素的外部，从后面插入元素
+
+.insertBefore()和.before()：在现存元素的外部，从前面插入元素
+
+.appendTo()和.append()：在现存元素的内部，从后面插入元素
+
+.prependTo()和.prepend()：在现存元素的内部，从前面插入元素
+</code></pre><p>如果需要存储对添加到页面中的元素引用，那么采用第一种方法，因为会返回要移动的元素。</p>
+<h2 id="jquery--3">jQuery 修改元素的内容</h2>
+<p>jQuery设计思想之一就是使用同一个函数实现读与写，即getter和setter合一。</p>
+<pre><code>$div.text()
+text()里没有参数，可直接写，如有参数即可进行修改。
+$div.html() //读写html内容
+$div.attr('tittle', ) //读写属性
+$div.css({color: 'red'}) //读写style
+</code></pre>
+    </div>
+
+    
+    
+<div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">🐟</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+      0001-01-01
+      
+    </span>
+  </p>
+  
+  <p class="copyright-item">
+    <span class="item-title">许可协议</span>
+    <span class="item-content"><a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a></span>
+  </p>
+</div>
+
+
+    
+    
+
+    <footer class="post-footer">
+      
+
+      
+      <nav class="post-nav">
+        
+          <a class="prev" href="/post/css%E7%9A%84%E4%BA%94%E7%A7%8D%E5%BC%95%E5%85%A5%E6%96%B9%E5%BC%8F/">
+            
+            <i class="iconfont">
+              <svg  class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M691.908486 949.511495l75.369571-89.491197c10.963703-12.998035 10.285251-32.864502-1.499144-44.378743L479.499795 515.267417 757.434875 204.940602c11.338233-12.190647 11.035334-32.285311-0.638543-44.850487l-80.46666-86.564541c-11.680017-12.583596-30.356378-12.893658-41.662889-0.716314L257.233596 494.235404c-11.332093 12.183484-11.041474 32.266891 0.657986 44.844348l80.46666 86.564541c1.772366 1.910513 3.706415 3.533476 5.750981 4.877077l306.620399 321.703933C662.505829 963.726242 680.945807 962.528973 691.908486 949.511495z"></path>
+</svg>
+
+            </i>
+            <span class="prev-text nav-default"></span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        
+          <a class="next" href="/post/%E5%85%B3%E4%BA%8Ehtml%E7%9A%84%E7%AE%80%E5%8D%95%E4%BB%8B%E7%BB%8D/">
+            <span class="next-text nav-default"></span>
+            <span class="prev-text nav-mobile">下一篇</span>
+            
+            <i class="iconfont">
+              <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M332.091514 74.487481l-75.369571 89.491197c-10.963703 12.998035-10.285251 32.864502 1.499144 44.378743l286.278095 300.375162L266.565125 819.058374c-11.338233 12.190647-11.035334 32.285311 0.638543 44.850487l80.46666 86.564541c11.680017 12.583596 30.356378 12.893658 41.662889 0.716314l377.434212-421.426145c11.332093-12.183484 11.041474-32.266891-0.657986-44.844348l-80.46666-86.564541c-1.772366-1.910513-3.706415-3.533476-5.750981-4.877077L373.270379 71.774697C361.493148 60.273758 343.054193 61.470003 332.091514 74.487481z"></path>
+</svg>
+
+            </i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+    
+
+  
 
         </div>
       </div>

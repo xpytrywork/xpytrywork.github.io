@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on 余佩的博客</title>
+    <link>http://localhost:1313/post/</link>
+    <description>Recent content in Posts on 余佩的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 13 Oct 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>《CSS知识总结》</title>
+      <link>http://localhost:1313/post/css-%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/</link>
+      <pubDate>Sun, 13 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/css-%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/</guid>
+      <description>浏览器渲染原理 CSS 动画的两种做法（transition 和 animation） 其他任何你想写的。 浏览器渲染原理 1.根据HTML构建HTML树(D</description>
+    </item>
+    
+    <item>
+      <title>《JavaScript数据类型》</title>
+      <link>http://localhost:1313/post/javascript%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</link>
+      <pubDate>Sun, 13 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/javascript%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</guid>
+      <description>JavaScript数据类型 JavaScript一共有七种数据类型，分别是number string boolean symbol undefined null object number 1.JavaScript 内部，所有数字都是以64位浮点数形式储</description>
+    </item>
+    
+    <item>
+      <title>《JS的基本语法》</title>
+      <link>http://localhost:1313/post/js%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</link>
+      <pubDate>Mon, 07 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/js%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</guid>
+      <description>什么是表达式和语句 标识符的规则 if else 语句 while for 语句 break continue label JS 的基本语法 这一次博客我们记录一下JS的基本语法 表达式与语句 JavaScript 程序的执行单位为行（lin</description>
+    </item>
+    
+    <item>
+      <title>《CSS定位》</title>
+      <link>http://localhost:1313/post/%E6%B5%85%E6%9E%90-url/</link>
+      <pubDate>Sun, 29 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/%E6%B5%85%E6%9E%90-url/</guid>
+      <description>《CSS 定位》 上一次的博客，我们记录了CSS的布局，有float布局，flex布局等 这次我们来介绍一下CSS定位 定位与布局 首先我们要明白，布</description>
+    </item>
+    
+    <item>
+      <title>《content-box与border-box.md》</title>
+      <link>http://localhost:1313/post/content-box%E4%B8%8Eborder-box/</link>
+      <pubDate>Sat, 28 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/content-box%E4%B8%8Eborder-box/</guid>
+      <description>content-box是内容盒，内容content就是他的边界 border-box是边框盒，边框border是他的边界 content-box width=内容宽度</description>
+    </item>
+    
+    <item>
+      <title>《HTML 入门笔记1》</title>
+      <link>http://localhost:1313/post/html%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B01/</link>
+      <pubDate>Sat, 28 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/html%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B01/</guid>
+      <description>HTML是由英国的李爵士发明的 HTML 最开始写!DOCTYPE html 这句话是说明这个文件的类型为HTML h1-h6代表六个大小逐渐变小的标题，sect</description>
+    </item>
+    
+    <item>
+      <title>《HTML 入门笔记1》</title>
+      <link>http://localhost:1313/post/%E6%B5%8F%E8%A7%88%E5%99%A8%E6%B8%B2%E6%9F%93%E5%8E%9F%E7%90%86/</link>
+      <pubDate>Sat, 28 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/%E6%B5%8F%E8%A7%88%E5%99%A8%E6%B8%B2%E6%9F%93%E5%8E%9F%E7%90%86/</guid>
+      <description>浏览器渲染原理 CSS 动画的两种做法（transition 和 animation） 其他任何你想写的。</description>
+    </item>
+    
+    <item>
+      <title>《JavaScript的诞生》</title>
+      <link>http://localhost:1313/post/javascript%E7%9A%84%E8%AF%9E%E7%94%9F/</link>
+      <pubDate>Sat, 28 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/javascript%E7%9A%84%E8%AF%9E%E7%94%9F/</guid>
+      <description>《JavaScript的诞生》 HTML是由李爵士发明的，CSS由赖先生发明，JavaScript由布莱登发明 布莱登是一个美国人，当年发明Ja</description>
+    </item>
+    
+    <item>
+      <title>《JS 对象基本用法》</title>
+      <link>http://localhost:1313/post/js-%E5%AF%B9%E8%B1%A1%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/</link>
+      <pubDate>Sat, 28 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/js-%E5%AF%B9%E8%B1%A1%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/</guid>
+      <description>《JS 对象基本用法》 序言 对象（object）是 JavaScript 语言的核心概念，同时也是最重要最复杂的(包含了函数，数据) 数据类型 那么什么是对象呢，简而言之</description>
+    </item>
+    
+    <item>
+      <title>css简介</title>
+      <link>http://localhost:1313/post/css%E7%AE%80%E4%BB%8B/</link>
+      <pubDate>Sun, 15 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/css%E7%AE%80%E4%BB%8B/</guid>
+      <description>CSS简介 层叠样式表(英文全称：Cascading Style Sheets)是一种用来表现HTML（标准通用标记语言的一个应用）或XML（标准通用标记</description>
+    </item>
+    
+    <item>
+      <title>《如何用 hugo 搭建个人博客》</title>
+      <link>http://localhost:1313/post/%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2/</link>
+      <pubDate>Sun, 08 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2/</guid>
+      <description>如何用 hugo 搭建个人博客 记录一下如何快速使用hugo技术搭建一个属于自己的博客 1.首先进入hugo的官网下载安装hugo https://gohugo.io/getting-started/installing 解压之后的路径需要加入</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/post/css%E7%9A%84%E4%BA%94%E7%A7%8D%E5%BC%95%E5%85%A5%E6%96%B9%E5%BC%8F/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/css%E7%9A%84%E4%BA%94%E7%A7%8D%E5%BC%95%E5%85%A5%E6%96%B9%E5%BC%8F/</guid>
+      <description>css的五种引入方式 1.行内式 直接在标签里写属性 例如
+&amp;lt;body bgcolor=&#39;red&#39;&amp;gt;2.内联式 &amp;lt;body style=&amp;quot;background-color: grey&amp;quot;&amp;gt;3.style嵌入式 在head里面加入一个style标签
+&amp;lt;style&amp;gt;body{background:red;}&amp;lt;/style&amp;gt;4.外联式(用的最为普遍) 在head里面加入
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;&amp;quot;&amp;gt;5.就是CSS里面引入另外一CSS。 @import url(./b.css);</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/post/jquery/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/jquery/</guid>
+      <description>jQuery jQuery 获取元素 jQuery的最基本概念是“选择一些元素并对其进行处理”，可以使用CSS选择器,下面是jQuery获取元素的方式
+$(document) //选择整个文档对象$(&#39;#myId&#39;) //选择ID为myId的网页元素$(&#39;div.myClass&#39;) // 选择class为myClass的div元素$(&#39;input[name=first]&#39;) // 选择name属性等于first的input元素也可以使用jQuery特有的
+$(&#39;a:first&#39;)，获取网页中第一个a元素$(&#39;:header&#39;) ，获取所有标题元素$(&#39;div:visible&#39;)，获取可见的div元素$(&#39;div:gt(2)&#39;) // 选择所有的div元素，除了前三个$(&#39;tr:odd&#39;)，获取所有奇数元素$(&#39;tr:even&#39;)，获取所有偶数元素$(&#39;:animated&#39;) ，获取所有动画元素jQuery 的链式操作 jQuery的链式操作就是最终选中网页元素以后，可以对它进行一系列操作，并且所有操作可以连接在一起，以链条的形式写出来，比如：
+$(&#39;div&#39;).find(&#39;h3&#39;).eq(2).html(&#39;Hello&#39;);分解开就是$(&#39;div&#39;) //找到div元素.find(&#39;h3&#39;) //选择其中的h3元素.eq(2) //选择第3个h3元素.html(&#39;Hello&#39;); //将它的内容改为Hello它的原理在于每一步的jQuery操作，返回的都是一个jQuery对象，所以不同操作可以连在一起。
+用jQuery 创建元素 const $div1 = $(&#39;&amp;lt;div&amp;gt;新建元素&amp;lt;/div&amp;gt;&#39;)//创建元素后，如果需要将其添加$div1.appendTo(document.body)用jQuery移动元素 jQuery来操作元素在网页中的位置移动。一组方法是直接移动该元素，另一组方法是移动其他元素，使得目标元素达到我们想要的位置。
+第一种方法是使用.insertAfter()，把div元素移动p元素后面：
+$(&#39;div&#39;).insertAfter($(&#39;p&#39;));第二种方法是使用.after()，把p元素加到div元素前面
+$(&#39;p&#39;).after($(&#39;div&#39;));看起来这两种方法效果一样，但实际上他们返回的元素不一 样，第一种方法是返回的是div元素，第二种方法是返回p元素。 还有其他方法也遵循这种模式：
+.insertAfter()和.after()：在现存元素的外部，从后面插入元素.insertBefore()和.before()：在现存元素的外部，从前面插入元素.appendTo()和.append()：在现存元素的内部，从后面插入元素.prependTo()和.prepend()：在现存元素的内部，从前面插入元素如果需要存储对添加到页面中的元素引用，那么采用第一种方法，因为会返回要移动的元素。
+jQuery 修改元素的内容 jQuery设计思想之一就是使用同一个函数实现读与写，即getter和setter合一。
+$div.text()text()里没有参数，可直接写，如有参数即可进行修改。$div.html() //读写html内容$div.attr(&#39;tittle&#39;, ) //读写属性$div.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/post/%E5%85%B3%E4%BA%8Ehtml%E7%9A%84%E7%AE%80%E5%8D%95%E4%BB%8B%E7%BB%8D/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/%E5%85%B3%E4%BA%8Ehtml%E7%9A%84%E7%AE%80%E5%8D%95%E4%BB%8B%E7%BB%8D/</guid>
+      <description>关于html的简单介绍 1.什么是html HTML全称为（超文本标记语言——HyperText Markup Language） HTML (HyperText Markup Language) 不是一门编程语言， 而是一种用来告知浏览器如何组织页面的标记语言。HTML 可复杂、可简单，一切取决于开发者。 它由一系列的元素（elements）组成，这些元素可以用来包围不同部分的内容，使其以某种方式呈现或者工作。 一对标签（ tags）可以为一段文字或者一张图片添加超链接，将文字设置为斜体，改变字号，等等。
+2.剖析一个html元素 以一张图片为例子
+3.内联元素与块级元素 块级元素在页面中以块的形式展现 —— 相对于其前面的内容它会出现在新的一行，其后的内容也会被挤到下一行展现。块级元素通常用于展示页面上结构化的内容，例如段落、列表、导航菜单、页脚等等。一个以block形式展现的块级元素不会被嵌套进内联元素中，但可以嵌套在其它块级元素中。
+内联元素通常出现在块级元素中并环绕文档内容的一小部分，而不是一整个段落或者一组内容。内联元素不会导致文本换行。
+4.空元素 一个空元素（empty element）可能是 HTML，SVG，或者 MathML 里的一个不可能存在子节点（例如内嵌的元素或者元素内的文本）的element。
+在 HTML 中，通常在一个空元素上使用一个闭标签是无效的。例如， &amp;lt;input type=&amp;quot;text&amp;quot;&amp;gt;&amp;lt;/input&amp;gt; 的闭标签是无效的 HTML。
+在 HTML 中有以下这些空元素：
+&amp;lt;area&amp;gt;&amp;lt;base&amp;gt;&amp;lt;br&amp;gt;&amp;lt;col&amp;gt;&amp;lt;colgroup&amp;gt; when the span is present&amp;lt;command&amp;gt;&amp;lt;embed&amp;gt;&amp;lt;hr&amp;gt;&amp;lt;img&amp;gt;&amp;lt;input&amp;gt;&amp;lt;keygen&amp;gt;&amp;lt;link&amp;gt;&amp;lt;meta&amp;gt;&amp;lt;param&amp;gt;&amp;lt;source&amp;gt;&amp;lt;track&amp;gt;&amp;lt;wbr&amp;gt; 元素的属性 属性包含元素的额外信息，这些信息不会出现在实际的内容中。例如class属性给元素赋了一个识别的名字，这个名字此后可以被用来识别此元素的样式信息和其他信息。</description>
+    </item>
+    
+    <item>
+      <title>My First Post</title>
+      <link>http://localhost:1313/post/my-first-post/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/my-first-post/</guid>
+      <description>这是我的第一篇hugo博客</description>
+    </item>
+    
+    <item>
+      <title>《JS 函数》</title>
+      <link>http://localhost:1313/post/js%E5%87%BD%E6%95%B0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/js%E5%87%BD%E6%95%B0/</guid>
+      <description>JS函数 本篇博客将为大家介绍 1.函数的声明方式 2.函数的闭包 3.函数的本质 4.JS函数调用时机 函数的声明方式 1.构造具名函数 function 函数名(形参1</description>
+    </item>
+    
+  </channel>
+</rss>

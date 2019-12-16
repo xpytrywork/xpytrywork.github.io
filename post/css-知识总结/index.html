@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>404 page not found - 余佩的博客</title>
+  <title>《CSS知识总结》 - 余佩的博客</title>
   
 
 <meta name="renderer" content="webkit" />
@@ -23,7 +23,8 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="🐟" />
-  <meta name="description" content="Hugo theme jane example site." />
+  <meta name="description" content="浏览器渲染原理 CSS 动画的两种做法（transition 和 animation） 其他任何你想写的。 浏览器渲染原理 1.根据HTML构建HTML树(D" />
+
   <meta name="keywords" content="Hugo, theme, jane" />
 
 
@@ -34,7 +35,7 @@
 <meta name="generator" content="Hugo 0.61.0" />
 
 
-<link rel="canonical" href="http://localhost:1313/404.html" />
+<link rel="canonical" href="http://localhost:1313/post/css-%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/" />
 
 
 
@@ -58,15 +59,23 @@
 
 
 
-<meta property="og:title" content="404 Page not found" />
-<meta property="og:description" content="Hugo theme jane example site." />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="http://localhost:1313/404.html" />
+<meta property="og:title" content="《CSS知识总结》" />
+<meta property="og:description" content="浏览器渲染原理 CSS 动画的两种做法（transition 和 animation） 其他任何你想写的。 浏览器渲染原理 1.根据HTML构建HTML树(D" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/post/css-%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/" />
+<meta property="article:published_time" content="2019-10-13T00:00:00+00:00" />
+<meta property="article:modified_time" content="2019-10-13T00:00:00+00:00" />
+<meta itemprop="name" content="《CSS知识总结》">
+<meta itemprop="description" content="浏览器渲染原理 CSS 动画的两种做法（transition 和 animation） 其他任何你想写的。 浏览器渲染原理 1.根据HTML构建HTML树(D">
+<meta itemprop="datePublished" content="2019-10-13T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2019-10-13T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="669">
 
-<meta itemprop="name" content="404 Page not found">
-<meta itemprop="description" content="Hugo theme jane example site."><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="404 Page not found"/>
-<meta name="twitter:description" content="Hugo theme jane example site."/>
+
+
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="《CSS知识总结》"/>
+<meta name="twitter:description" content="浏览器渲染原理 CSS 动画的两种做法（transition 和 animation） 其他任何你想写的。 浏览器渲染原理 1.根据HTML构建HTML树(D"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -325,21 +334,151 @@
     <main id="main" class="main bg-llight">
       <div class="content-wrapper">
         <div id="content" class="content container">
-          
-<div class="not-found">
-  <h1 class="error-emoji"></h1>
-  <p class="error-text">/* 404 page not found. */</p>
-  <p class="error-link"><a href="/">↑ Back Home ↑</a></p>
+          <article class="post bg-white">
+    
+    <header class="post-header">
+      <h1 class="post-title">《CSS知识总结》</h1>
+      
+      <div class="post-meta">
+        <time datetime="2019-10-13" class="post-time">
+          2019-10-13
+        </time>
+        
+        
+
+        
+        
+
+        
+        
+      </div>
+    </header>
+
+    
+    
+<div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#heading">浏览器渲染原理</a></li>
+    <li><a href="#css">CSS动画</a></li>
+    <li><a href="#transition--animation">transition 和 animation</a></li>
+  </ul>
+</nav>
+  </div>
 </div>
-<script>
-  var errorEmojiContainer = document.getElementsByClassName('error-emoji')[0];
-  var emojiArray = [
-    '\\(o_o)/', '(o^^)o', '(˚Δ˚)b', '(^-^*)', '(≥o≤)', '(^_^)b', '(·_·)',
-    '(=\'X\'=)', '(>_<)', '(;-;)', '\\(^Д^)/',
-  ];
-  var errorEmoji = emojiArray[Math.floor(Math.random() * emojiArray.length)];
-  errorEmojiContainer.appendChild(document.createTextNode(errorEmoji));
-</script>
+
+    
+    <div class="post-content">
+      <p>浏览器渲染原理
+CSS 动画的两种做法（transition 和 animation）
+其他任何你想写的。</p>
+<h2 id="heading">浏览器渲染原理</h2>
+<p>1.根据HTML构建HTML树(DOM)</p>
+<p>2.根据CSS构建CSS树(CSSOM)</p>
+<p>3.将两棵树合并成一颗渲染树(render tree)</p>
+<p>4.Layout布局(文档流，盒模型，计算大小位置)</p>
+<p>5.Paint绘制(把边框颜色，文字颜色，阴影画出来)</p>
+<p>6.Compose合成(根据层叠关系展示画面)</p>
+<p><img src="https://github.com/xpytrywork/markdown_images/blob/master/Snipaste_2019-10-13_22-43-53.png?raw=true" alt="image"></p>
+<h2 id="css">CSS动画</h2>
+<p>动画是指许多静止的画面（帧）以一定的速度（如每秒30张）连续播放时，肉眼因视觉残像产生错觉，而误以为是活动的画面。</p>
+<p>帧是指每个静止的画面；</p>
+<p>播放速度：每秒24帧（影视）或者每秒30帧（游戏）</p>
+<h2 id="transition--animation">transition 和 animation</h2>
+<p>transition</p>
+<p>作用：补充中间帧</p>
+<p>transition：属性名 时长 过渡方式 延迟</p>
+<p>transition：left 200ms linear
+可以用逗号分隔两个不同属性</p>
+<p>transition：left 200ms,top 400ms</p>
+<p>可以用all代表所有属性</p>
+<p>transition:all 200ms</p>
+<p>过度方式有：linear/ease/ease-in/ease-out/ease-in-out/
+cubic-bezier/setp-start/step-end/steps</p>
+<p>注意：不是所有属性都能过渡</p>
+<p>display: none=&gt;block没法过渡</p>
+<p>一般改成visibility: hidden=&gt;visible</p>
+<p>animation：时长/过渡方式/延迟/次数/方向/填充模式/是否暂停/动画名；</p>
+<p>时长：1s或者100ms</p>
+<p>过渡方式：跟transition取值一样，如linear</p>
+<p>次数：3或者2.4或者infinite</p>
+<p>方向：reverse/alternate/alternate-reverse</p>
+<p>填充模式：none/forwars/backwards/both</p>
+<p>是否暂停：paused/running</p>
+
+    </div>
+
+    
+    
+<div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">🐟</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+      2019-10-13
+      
+    </span>
+  </p>
+  
+  <p class="copyright-item">
+    <span class="item-title">许可协议</span>
+    <span class="item-content"><a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a></span>
+  </p>
+</div>
+
+
+    
+    
+
+    <footer class="post-footer">
+      
+
+      
+      <nav class="post-nav">
+        
+        
+          <a class="next" href="/post/javascript%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/">
+            <span class="next-text nav-default">《JavaScript数据类型》</span>
+            <span class="prev-text nav-mobile">下一篇</span>
+            
+            <i class="iconfont">
+              <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M332.091514 74.487481l-75.369571 89.491197c-10.963703 12.998035-10.285251 32.864502 1.499144 44.378743l286.278095 300.375162L266.565125 819.058374c-11.338233 12.190647-11.035334 32.285311 0.638543 44.850487l80.46666 86.564541c11.680017 12.583596 30.356378 12.893658 41.662889 0.716314l377.434212-421.426145c11.332093-12.183484 11.041474-32.266891-0.657986-44.844348l-80.46666-86.564541c-1.772366-1.910513-3.706415-3.533476-5.750981-4.877077L373.270379 71.774697C361.493148 60.273758 343.054193 61.470003 332.091514 74.487481z"></path>
+</svg>
+
+            </i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+    
+
+  
 
         </div>
       </div>

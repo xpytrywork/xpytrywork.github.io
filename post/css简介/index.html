@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>404 page not found - 余佩的博客</title>
+  <title>css简介 - 余佩的博客</title>
   
 
 <meta name="renderer" content="webkit" />
@@ -23,7 +23,8 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="🐟" />
-  <meta name="description" content="Hugo theme jane example site." />
+  <meta name="description" content="CSS简介 层叠样式表(英文全称：Cascading Style Sheets)是一种用来表现HTML（标准通用标记语言的一个应用）或XML（标准通用标记" />
+
   <meta name="keywords" content="Hugo, theme, jane" />
 
 
@@ -34,7 +35,7 @@
 <meta name="generator" content="Hugo 0.61.0" />
 
 
-<link rel="canonical" href="http://localhost:1313/404.html" />
+<link rel="canonical" href="http://localhost:1313/post/css%E7%AE%80%E4%BB%8B/" />
 
 
 
@@ -58,15 +59,23 @@
 
 
 
-<meta property="og:title" content="404 Page not found" />
-<meta property="og:description" content="Hugo theme jane example site." />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="http://localhost:1313/404.html" />
+<meta property="og:title" content="css简介" />
+<meta property="og:description" content="CSS简介 层叠样式表(英文全称：Cascading Style Sheets)是一种用来表现HTML（标准通用标记语言的一个应用）或XML（标准通用标记" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/post/css%E7%AE%80%E4%BB%8B/" />
+<meta property="article:published_time" content="2019-09-15T00:00:00+00:00" />
+<meta property="article:modified_time" content="2019-09-15T00:00:00+00:00" />
+<meta itemprop="name" content="css简介">
+<meta itemprop="description" content="CSS简介 层叠样式表(英文全称：Cascading Style Sheets)是一种用来表现HTML（标准通用标记语言的一个应用）或XML（标准通用标记">
+<meta itemprop="datePublished" content="2019-09-15T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2019-09-15T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="1257">
 
-<meta itemprop="name" content="404 Page not found">
-<meta itemprop="description" content="Hugo theme jane example site."><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="404 Page not found"/>
-<meta name="twitter:description" content="Hugo theme jane example site."/>
+
+
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="css简介"/>
+<meta name="twitter:description" content="CSS简介 层叠样式表(英文全称：Cascading Style Sheets)是一种用来表现HTML（标准通用标记语言的一个应用）或XML（标准通用标记"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -325,21 +334,200 @@
     <main id="main" class="main bg-llight">
       <div class="content-wrapper">
         <div id="content" class="content container">
-          
-<div class="not-found">
-  <h1 class="error-emoji"></h1>
-  <p class="error-text">/* 404 page not found. */</p>
-  <p class="error-link"><a href="/">↑ Back Home ↑</a></p>
+          <article class="post bg-white">
+    
+    <header class="post-header">
+      <h1 class="post-title">css简介</h1>
+      
+      <div class="post-meta">
+        <time datetime="2019-09-15" class="post-time">
+          2019-09-15
+        </time>
+        
+        
+
+        
+        
+
+        
+        
+      </div>
+    </header>
+
+    
+    
+<div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#css">CSS简介</a></li>
+        <li><a href="#css-1">CSS版本</a></li>
+        <li><a href="#heading">文档流元素流动方向</a></li>
+        <li><a href="#heading-1">文档流元素的宽度计算</a></li>
+        <li><a href="#heading-2">文档流元素的高度计算</a></li>
+        <li><a href="#css-2">CSS布局</a></li>
+        <li><a href="#grid">Grid布局（只兼容最新版浏览器，二维，大多数不能完美兼容，这里不展开叙述）</a></li>
+        <li><a href="#flex">flex布局(非常好用的一种布局方式)</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
 </div>
-<script>
-  var errorEmojiContainer = document.getElementsByClassName('error-emoji')[0];
-  var emojiArray = [
-    '\\(o_o)/', '(o^^)o', '(˚Δ˚)b', '(^-^*)', '(≥o≤)', '(^_^)b', '(·_·)',
-    '(=\'X\'=)', '(>_<)', '(;-;)', '\\(^Д^)/',
-  ];
-  var errorEmoji = emojiArray[Math.floor(Math.random() * emojiArray.length)];
-  errorEmojiContainer.appendChild(document.createTextNode(errorEmoji));
-</script>
+
+    
+    <div class="post-content">
+      <h3 id="css">CSS简介</h3>
+<p>层叠样式表(英文全称：Cascading Style Sheets)是一种用来表现HTML（标准通用标记语言的一个应用）或XML（标准通用标记语言的一个子集）等文件样式的计算机语言。CSS不仅可以静态地修饰网页，还可以配合各种脚本语言动态地对网页各元素进行格式化。</p>
+<p>CSS 能够对网页中元素位置的排版进行像素级精确控制，支持几乎所有的字体字号样式，拥有对网页对象和模型hug样式编辑的能力。</p>
+<hr>
+<h3 id="css-1">CSS版本</h3>
+<p>CSS2.1是目前使用最为广泛的版本。</p>
+<p>CSS4.0是分模块进行升级的</p>
+<p>CSS语法的注意事项</p>
+<p>（1）所有的符号都是英文符号，如果写错了浏览器就会报警；</p>
+<p>（2）区分大小写，a和A是完全不同的；</p>
+<p>（3）没有//注释；</p>
+<p>（4）最后的一个分号可以省略，但是建议不要省略；</p>
+<p>（5）任何地方写错了，都不会报错，浏览器会直接忽略。</p>
+<hr>
+<h3 id="heading">文档流元素流动方向</h3>
+<p>（1）inline元素从左往右，到达最右边才会换行；</p>
+<p>（2）block元素从上往下，每一个都另起一行；</p>
+<p>（3）inline-block也是从左往右，但是他不会把某一个进行同时暂居两行。</p>
+<h3 id="heading-1">文档流元素的宽度计算</h3>
+<p>inline元素宽度是由他里面的所有内联元素合起来的；</p>
+<p>block默认自动计算宽度，可用width指定；</p>
+<p>inline-block结合两者特点，可用width指定；</p>
+<h3 id="heading-2">文档流元素的高度计算</h3>
+<p>inline高度由line-height间接确定的，跟 height无关；</p>
+<p>block高度由内部文档流元素决定，可设置 height；</p>
+<p>inline-block跟block类似，可以设置height;</p>
+<hr>
+<p>盒模型</p>
+<p>content-box：只是以内容为中心的模型；</p>
+<p>border-box：包含centent padding border;</p>
+<hr>
+<h3 id="css-2">CSS布局</h3>
+<p>float布局模式（兼容IE）</p>
+<p>步骤：</p>
+<p>子元素上加float</p>
+<p>父元素上加clearfix,一定要加上</p>
+<p>clearfix书写如下</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#f92672">clearfix</span>::<span style="color:#a6e22e">after</span>{
+<span style="color:#66d9ef">content</span>:<span style="color:#e6db74">&#39;&#39;</span>;
+<span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">block</span>;
+<span style="color:#66d9ef">clear</span>: <span style="color:#66d9ef">both</span>;
+</code></pre></div><p>缺点 不兼容手机端，手机端不要想着用float布局</p>
+<hr>
+<h3 id="grid">Grid布局（只兼容最新版浏览器，二维，大多数不能完美兼容，这里不展开叙述）</h3>
+<hr>
+<h3 id="flex">flex布局(非常好用的一种布局方式)</h3>
+<h4 id="container">容器属性(container)</h4>
+<p>flex-direction　　容器内项目的排列方向(默认横向排列)
+　　
+flex-wrap　　容器内项目换行方式</p>
+<p>flex-flow　　以上两个属性的简写方式</p>
+<p>justify-content　　项目在主轴上的对齐方式</p>
+<p>align-items　　项目在交叉轴上如何对齐</p>
+<p>align-content　　定义了多根轴线的对齐方式。如果项目只有一根轴线，该属性不起作用。</p>
+<h5 id="item">项目属性(item)</h5>
+<p>order　　项目的排列顺序。数值越小，排列越靠前，默认为0。</p>
+<p>flex-grow　　项目的放大比例，默认为0，即如果存在剩余空间，也不放大。</p>
+<p>flex-shrink　　项目的缩小比例，默认为1，即如果空间不足，该项目将缩小。</p>
+<p>flex-basis　　在分配多余空间之前，项目占据的主轴空间（main size）。浏览器根据这个属性，计算主轴是否有多余空间。它的默认值为auto，即项目的本来大小。</p>
+<p>flex　　是flex-grow, flex-shrink 和 flex-basis的简写，默认值为0 1 auto。后两个属性可选。</p>
+<p>align-items属性。默认值为auto，表示继承父元素的align-items属性，如果没有父元素，则等同于stretch。</p>
+<hr>
+<p>这次的博客到此为止，下次我们来试试做具体的布局案例</p>
+
+    </div>
+
+    
+    
+<div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">🐟</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+      2019-09-15
+      
+    </span>
+  </p>
+  
+  <p class="copyright-item">
+    <span class="item-title">许可协议</span>
+    <span class="item-content"><a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a></span>
+  </p>
+</div>
+
+
+    
+    
+
+    <footer class="post-footer">
+      
+
+      
+      <nav class="post-nav">
+        
+          <a class="prev" href="/post/js-%E5%AF%B9%E8%B1%A1%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/">
+            
+            <i class="iconfont">
+              <svg  class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M691.908486 949.511495l75.369571-89.491197c10.963703-12.998035 10.285251-32.864502-1.499144-44.378743L479.499795 515.267417 757.434875 204.940602c11.338233-12.190647 11.035334-32.285311-0.638543-44.850487l-80.46666-86.564541c-11.680017-12.583596-30.356378-12.893658-41.662889-0.716314L257.233596 494.235404c-11.332093 12.183484-11.041474 32.266891 0.657986 44.844348l80.46666 86.564541c1.772366 1.910513 3.706415 3.533476 5.750981 4.877077l306.620399 321.703933C662.505829 963.726242 680.945807 962.528973 691.908486 949.511495z"></path>
+</svg>
+
+            </i>
+            <span class="prev-text nav-default">《JS 对象基本用法》</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        
+          <a class="next" href="/post/%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2/">
+            <span class="next-text nav-default">《如何用 hugo 搭建个人博客》</span>
+            <span class="prev-text nav-mobile">下一篇</span>
+            
+            <i class="iconfont">
+              <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M332.091514 74.487481l-75.369571 89.491197c-10.963703 12.998035-10.285251 32.864502 1.499144 44.378743l286.278095 300.375162L266.565125 819.058374c-11.338233 12.190647-11.035334 32.285311 0.638543 44.850487l80.46666 86.564541c11.680017 12.583596 30.356378 12.893658 41.662889 0.716314l377.434212-421.426145c11.332093-12.183484 11.041474-32.266891-0.657986-44.844348l-80.46666-86.564541c-1.772366-1.910513-3.706415-3.533476-5.750981-4.877077L373.270379 71.774697C361.493148 60.273758 343.054193 61.470003 332.091514 74.487481z"></path>
+</svg>
+
+            </i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+    
+
+  
 
         </div>
       </div>

@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>404 page not found - 余佩的博客</title>
+  <title>《JavaScript数据类型》 - 余佩的博客</title>
   
 
 <meta name="renderer" content="webkit" />
@@ -23,7 +23,8 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="🐟" />
-  <meta name="description" content="Hugo theme jane example site." />
+  <meta name="description" content="JavaScript数据类型 JavaScript一共有七种数据类型，分别是number string boolean symbol undefined null object number 1.JavaScript 内部，所有数字都是以64位浮点数形式储" />
+
   <meta name="keywords" content="Hugo, theme, jane" />
 
 
@@ -34,7 +35,7 @@
 <meta name="generator" content="Hugo 0.61.0" />
 
 
-<link rel="canonical" href="http://localhost:1313/404.html" />
+<link rel="canonical" href="http://localhost:1313/post/javascript%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/" />
 
 
 
@@ -58,15 +59,23 @@
 
 
 
-<meta property="og:title" content="404 Page not found" />
-<meta property="og:description" content="Hugo theme jane example site." />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="http://localhost:1313/404.html" />
+<meta property="og:title" content="《JavaScript数据类型》" />
+<meta property="og:description" content="JavaScript数据类型 JavaScript一共有七种数据类型，分别是number string boolean symbol undefined null object number 1.JavaScript 内部，所有数字都是以64位浮点数形式储" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/post/javascript%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/" />
+<meta property="article:published_time" content="2019-10-13T00:00:00+00:00" />
+<meta property="article:modified_time" content="2019-10-13T00:00:00+00:00" />
+<meta itemprop="name" content="《JavaScript数据类型》">
+<meta itemprop="description" content="JavaScript数据类型 JavaScript一共有七种数据类型，分别是number string boolean symbol undefined null object number 1.JavaScript 内部，所有数字都是以64位浮点数形式储">
+<meta itemprop="datePublished" content="2019-10-13T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2019-10-13T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="1097">
 
-<meta itemprop="name" content="404 Page not found">
-<meta itemprop="description" content="Hugo theme jane example site."><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="404 Page not found"/>
-<meta name="twitter:description" content="Hugo theme jane example site."/>
+
+
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="《JavaScript数据类型》"/>
+<meta name="twitter:description" content="JavaScript数据类型 JavaScript一共有七种数据类型，分别是number string boolean symbol undefined null object number 1.JavaScript 内部，所有数字都是以64位浮点数形式储"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -325,21 +334,195 @@
     <main id="main" class="main bg-llight">
       <div class="content-wrapper">
         <div id="content" class="content container">
-          
-<div class="not-found">
-  <h1 class="error-emoji"></h1>
-  <p class="error-text">/* 404 page not found. */</p>
-  <p class="error-link"><a href="/">↑ Back Home ↑</a></p>
+          <article class="post bg-white">
+    
+    <header class="post-header">
+      <h1 class="post-title">《JavaScript数据类型》</h1>
+      
+      <div class="post-meta">
+        <time datetime="2019-10-13" class="post-time">
+          2019-10-13
+        </time>
+        
+        
+
+        
+        
+
+        
+        
+      </div>
+    </header>
+
+    
+    
+<div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#javascript">JavaScript数据类型</a></li>
+    <li><a href="#number">number</a></li>
+    <li><a href="#string">String</a></li>
+    <li><a href="#object">对象(Object)</a></li>
+  </ul>
+</nav>
+  </div>
 </div>
-<script>
-  var errorEmojiContainer = document.getElementsByClassName('error-emoji')[0];
-  var emojiArray = [
-    '\\(o_o)/', '(o^^)o', '(˚Δ˚)b', '(^-^*)', '(≥o≤)', '(^_^)b', '(·_·)',
-    '(=\'X\'=)', '(>_<)', '(;-;)', '\\(^Д^)/',
-  ];
-  var errorEmoji = emojiArray[Math.floor(Math.random() * emojiArray.length)];
-  errorEmojiContainer.appendChild(document.createTextNode(errorEmoji));
-</script>
+
+    
+    <div class="post-content">
+      <h2 id="javascript">JavaScript数据类型</h2>
+<p>JavaScript一共有七种数据类型，分别是number string boolean  symbol undefined null object</p>
+<h2 id="number">number</h2>
+<p>1.JavaScript 内部，所有数字都是以64位浮点数形式储存</p>
+<p>2.由于浮点数不是精确的值，所以涉及小数的比较和运算要特别小心。</p>
+<p>例子</p>
+<pre><code>0.1 + 0.2 === 0.3
+
+// false
+
+</code></pre><p>3.数值精度</p>
+<p>第1位：符号位，0表示正数，1表示负数</p>
+<p>第2位到第12位（共11位）：指数部分</p>
+<p>第13位到第64位（共52位）：小数部分（即有效数字）</p>
+<p>4.数值进度</p>
+<p>十进制：没有前导0的数值。</p>
+<p>八进制：有前缀0o或0O的数值，或者有前导0、且只用到0-7的八个阿拉伯数字的数值。</p>
+<p>十六进制：有前缀0x或0X的数值。</p>
+<p>二进制：有前缀0b或0B的数值。</p>
+<p>5.特殊数值</p>
+<p>+0 -0 NaN Infinity</p>
+<p>6.parseInt() 转化为整数</p>
+<pre><code>parseInt('123') // 将字符串123转化为数字123
+</code></pre><h2 id="string">String</h2>
+<p>1 概念：字符串就是零个或多个排在一起的字符，放在单引号或双引号之中。</p>
+<p>单引号字符串的内部，可以使用双引号。双引号字符串的内部，可以使用单引号。</p>
+<p>如果要在单引号字符串的内部，使用单引号，就必须在内部的单引号前面加上反斜杠，用来转义。双引号字符串内部使用双引号，也是如此。</p>
+<p>举例</p>
+<pre><code>'Did she say \'Hello\'?'
+
+// &quot;Did she say 'Hello'?&quot;
+</code></pre><p>2.转义</p>
+<p>反斜杠（\）在字符串内有特殊含义，用来表示一些特殊字符，所以又称为转义符。</p>
+<p>需要用反斜杠转义的特殊字符，主要有下面这些。</p>
+<p>\0 ：null（\u0000）</p>
+<p>\b ：后退键（\u0008）</p>
+<p>\f ：换页符（\u000C）</p>
+<p>\n ：换行符（\u000A）</p>
+<p>\r ：回车键（\u000D）</p>
+<p>\t ：制表符（\u0009）</p>
+<p>\v ：垂直制表符（\u000B）</p>
+<p>' ：单引号（\u0027）</p>
+<p>&quot; ：双引号（\u0022）</p>
+<p>\ ：反斜杠（\u005C）</p>
+<p>3.字符串与数组</p>
+<pre><code>var s = 'hello';
+
+s[0] // &quot;h&quot;
+
+s[1] // &quot;e&quot;
+
+s[4] // &quot;o&quot;
+
+// 直接对字符串使用方括号运算符
+
+'hello'[1] // &quot;e&quot;
+</code></pre><h2 id="object">对象(Object)</h2>
+<p>1.概念:
+什么是对象？简单说，对象就是一组“键值对”（key-value）的集合，是一种无序的复合数据集合。</p>
+<pre><code>var obj = {
+  foo: 'Hello'
+  bar: 'World'
+};
+</code></pre><p>大括号就定义了一个对象，它被赋值给变量obj，所以变量obj就指向一个对象。该对象内部包含两个键值对（又称为两个“成员”），第一个键值对是foo: &lsquo;Hello&rsquo;，其中foo是“键名”（成员的名称），字符串Hello是“键值”（成员的值）。键名与键值之间用冒号分隔。第二个键值对是bar: &lsquo;World&rsquo;，bar是键名，World是键值。两个键值对之间用逗号分隔。</p>
+<p>2.键名:对象的所有键名都是字符串（ES6 又引入了 Symbol 值也可以作为键名),如果键名是数字，也会转换为字符串</p>
+<p>对象的每一个键名又称为“属性”（property），它的“键值”可以是任何数据类型。如果一个属性的值为函数，通常把这个属性称为“方法”，它可以像函数那样调用。</p>
+
+    </div>
+
+    
+    
+<div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">🐟</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+      2019-10-13
+      
+    </span>
+  </p>
+  
+  <p class="copyright-item">
+    <span class="item-title">许可协议</span>
+    <span class="item-content"><a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a></span>
+  </p>
+</div>
+
+
+    
+    
+
+    <footer class="post-footer">
+      
+
+      
+      <nav class="post-nav">
+        
+          <a class="prev" href="/post/css-%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/">
+            
+            <i class="iconfont">
+              <svg  class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M691.908486 949.511495l75.369571-89.491197c10.963703-12.998035 10.285251-32.864502-1.499144-44.378743L479.499795 515.267417 757.434875 204.940602c11.338233-12.190647 11.035334-32.285311-0.638543-44.850487l-80.46666-86.564541c-11.680017-12.583596-30.356378-12.893658-41.662889-0.716314L257.233596 494.235404c-11.332093 12.183484-11.041474 32.266891 0.657986 44.844348l80.46666 86.564541c1.772366 1.910513 3.706415 3.533476 5.750981 4.877077l306.620399 321.703933C662.505829 963.726242 680.945807 962.528973 691.908486 949.511495z"></path>
+</svg>
+
+            </i>
+            <span class="prev-text nav-default">《CSS知识总结》</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        
+          <a class="next" href="/post/js%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/">
+            <span class="next-text nav-default">《JS的基本语法》</span>
+            <span class="prev-text nav-mobile">下一篇</span>
+            
+            <i class="iconfont">
+              <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M332.091514 74.487481l-75.369571 89.491197c-10.963703 12.998035-10.285251 32.864502 1.499144 44.378743l286.278095 300.375162L266.565125 819.058374c-11.338233 12.190647-11.035334 32.285311 0.638543 44.850487l80.46666 86.564541c11.680017 12.583596 30.356378 12.893658 41.662889 0.716314l377.434212-421.426145c11.332093-12.183484 11.041474-32.266891-0.657986-44.844348l-80.46666-86.564541c-1.772366-1.910513-3.706415-3.533476-5.750981-4.877077L373.270379 71.774697C361.493148 60.273758 343.054193 61.470003 332.091514 74.487481z"></path>
+</svg>
+
+            </i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+    
+
+  
 
         </div>
       </div>
